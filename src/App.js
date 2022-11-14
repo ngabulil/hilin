@@ -3,7 +3,9 @@ import Navigation from '../src/components/Navigation'
 
 function App() {
   return (
-    <Navigation />
+    <div>
+      <Navigation />
+    </div>
   );
 }
 
