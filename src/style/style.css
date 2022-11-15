@@ -15,6 +15,8 @@
     --bg-color: #F9FBFC;
 }
 
+/* NavbarLogin */
+
 /* Navigation */
 
 nav {
@@ -65,9 +67,14 @@ nav .menu ul li a:hover {
     justify-content: space-around;
 }
 
+.hero-login img {
+    width: 535px;
+    height: 550px;
+}
+
 form {
     background-color: var(--white-color);
-    margin-top: 60px;
+    margin-top: 40px;
     border-radius: 40px;
     box-shadow: 2px 2px 2px var(--black-color);
 }
@@ -100,10 +107,30 @@ button:hover {
 }
 
 .login-info {
-    padding: 20px 30px;
+    padding: 20px 38px;
     border-radius: 40px;
     width: 390px;
-    height: 466px;
+    height: 450px;
 }
 
+.login-info h2 {
+    margin: 15px 130px;
+}
+
+.register-info h2 {
+    margin: 15px 106px;
+}
+
+.info-login {
+    margin: 0 27px;
+    font-size: 14px;
+}
+
+.register-info {
+    padding: 20px 38px;
+    border-radius: 40px;
+    width: 390px;
+    height: 520px;
+    margin-bottom: 10px;
+}
 
