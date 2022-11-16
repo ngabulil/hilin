@@ -1,10 +1,11 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-filename-extension */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './style/style.css';
 import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 import ArticlePage from './pages/ArticlePage';
-
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path='/article' element={<ArticlePage />} />
+        <Route path="/article" element={<ArticlePage />} />
       </Routes>
     </BrowserRouter>
   );

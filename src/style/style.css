@@ -484,6 +484,8 @@ button:hover {
 
 .article-main-card {
     display: grid;
+    width: 340px;
+    height: 452px;
     row-gap: 30px;
     padding: 20px;
     text-align: center;
@@ -495,16 +497,47 @@ button:hover {
 }
 
 .article-main-card img {
-    width: 350px;
-    height: 300px;
-}
-
-.article-main-card p,
-.article-main-card a,
-.article-main-card div {
-    background-color: transparent;
+    width: 320px;
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: -8px -10px;
 }
 
 .article-main-card p {
+    height: 50px;
+    margin: -10px;
     font-weight: bold;
+}
+
+.article-header {
+    display: flex;
+    margin: 25px 120px;
+    column-gap: 40px;
+}
+
+.article-header-main {
+    margin: 25px 120px;
+}
+
+.article-hero img {
+    width: 630px;
+    height: 348px;
+    margin-bottom: 15px;
+}
+
+.article-hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.article-description {
+    width: 393px;
+    height: 400px;
+    margin-top: 75px;
+}
+
+.article-description p {
+    text-align: justify;
+    font-weight: 500;
 }
