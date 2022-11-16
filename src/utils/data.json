@@ -1,0 +1,57 @@
+[
+    {
+        "id" : 1,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/10/11/6344eace73ee8-ilustrasi-depresi-stres_1265_711.jpg",
+        "title" : "Hanya Perlu 4 Minggu, Konsumsi Makanan Jenis Ini Bisa Turunkan Stres",
+        "link" : "https://www.viva.co.id/gaya-hidup/kesehatan-intim/1542470-hanya-perlu-4-minggu-konsumsi-makanan-jenis-ini-bisa-turunkan-stres",
+        "description" : "VIVA Lifestyle – Ketika berurusan dengan stres, kita sering diberi tahu bahwa hal terbaik yang dapat dapat dilakukan adalah berolahraga, meluangkan waktu untuk kegiatan favorit kita, atau mencoba meditasi atau perhatian penuh. Tetapi jenis makanan yang kita makan mungkin juga merupakan cara yang efektif untuk mengatasi stres, menurut penelitian yang diterbitkan oleh saya dan anggota APC Microbiome Ireland lainnya."
+    }, 
+    {
+        "id" : 2,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/11/15/63730d65845f3-ilustrasi-ambisius_1265_711.jpeg",
+        "title" : "Tenang Vivanians! Jadi Ambisius Tak Perlu Korbankan Kesehatan Mental",
+        "link" : "https://www.viva.co.id/digital/digilife/1544098-tenang-vivanians-jadi-ambisius-tak-perlu-korbankan-kesehatan-mental"
+    },
+    {
+        "id" : 3,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2021/11/30/61a603d7a566c-ilustrasi-bahagia-menjaga-kesehatan_1265_711.jpg",
+        "title" : "Ada 5 Cara untuk Bahagia dan Berkembang",
+        "link" : "https://www.viva.co.id/digital/digilife/1532475-pakar-ada-5-cara-untuk-bahagia-dan-berkembang"
+    },
+    {
+        "id" : 4,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/11/08/6369c4d0b55aa-ilustrasi-sumpah-serapah-mengutuk_1265_711.jpeg",
+        "title" : "Sumpah Serapah Rupanya Baik untuk Kondisi Mental, Kok Bisa?",
+        "link" : "https://www.viva.co.id/digital/digilife/1541557-sumpah-serapah-rupanya-baik-untuk-kondisi-mental-kok-bisa"
+    },
+    {
+        "id" : 5,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/07/06/62c4fe149e590-stigma-gangguan-kesehatan-mental-berakhir-sekarang-atau-tidak-sama-sekali_1265_711.jpg",
+        "title" : "3 Tips agar Kesehatan Mental Terjaga di Media Sosial",
+        "link" : "https://www.viva.co.id/digital/digilife/1531732-3-tips-agar-kesehatan-mental-terjaga-di-media-sosial"
+    },
+    {
+        "id" : 6,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/10/10/6344105d377ae-bersepeda_1265_711.jpg",
+        "title" : "4 Manfaat Bersepeda untuk Kesehatan Fisik dan Mental",
+        "link" : "https://www.viva.co.id/gaya-hidup/kesehatan-intim/1530868-4-manfaat-bersepeda-untuk-kesehatan-fisik-dan-mental"
+    },
+    {
+        "id" : 7,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2019/07/30/5d40730d0afb9-ilustrasi-media-sosial_1265_711.jpg",
+        "title" : "Media Sosial Picu Stres? Ini Trik Jaga Kesehatan Mental",
+        "link" : "https://www.viva.co.id/gaya-hidup/kesehatan-intim/1530798-media-sosial-picu-stres-ini-trik-jaga-kesehatan-mental"
+    },
+    {
+        "id" : 8,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/10/10/63438c8f36e37-kesehatan-mental_1265_711.jpg",
+        "title" : "9 Tips Menjaga Kesehatan Mental Agar Tidak Stres dan Pola Hidup Lebih Terarah",
+        "link" : "https://www.viva.co.id/gaya-hidup/inspirasi-unik/1530585-9-tips-menjaga-kesehatan-mental-agar-tidak-stres-dan-pola-hidup-lebih-terarah"
+    },
+    {
+        "id" : 9,
+        "img" : "https://thumb.viva.co.id/media/frontend/thumbs3/2022/09/27/6332805661a9e-ilustrasi-multitasking-bekerja_1265_711.jpeg",
+        "title" : "Hari Kesehatan Mental Sedunia, 5 Tips Bantu Karyawan Kurangi Stres",
+        "link" : "https://www.viva.co.id/gaya-hidup/inspirasi-unik/1530542-hari-kesehatan-mental-sedunia-5-tips-bantu-karyawan-kurangi-stres"
+    }
+]

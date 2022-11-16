@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
 * {
     background-color: var(--bg-color);
     padding: 0;
@@ -11,7 +12,7 @@
 :root {
     --primary-color: #2135E3;
     --hover-color: #0012af;
-    --secondary-color: #D9D9D9 ;
+    --secondary-color: #D9D9D9;
     --black-color: #181818;
     --white-color: #ffffff;
     --bg-color: #F9FBFC;
@@ -19,10 +20,11 @@
 
 ::-webkit-scrollbar {
     width: 4px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-  }
+}
 
 /* Navigation */
 
@@ -64,13 +66,12 @@ nav .menu ul li a:hover {
     border: none;
     border-radius: 10px;
     color: var(--white-color)
-    
 }
 
 .btn-login a {
     text-decoration: none;
-   background-color: var(--primary-color);
-   color: var(--white-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 /* Login */
@@ -89,13 +90,16 @@ form {
     background-color: var(--white-color);
     margin-top: 80px;
     border-radius: 40px;
-    box-shadow: 2px 2px 2px var(--black-color);
+    /* box-shadow: 2px 2px 2px var(--black-color); */
+    filter: drop-shadow(2px 2px 2px black);
 }
 
 .register {
     margin-top: 30px;
 }
-input[type=text], input[type=password] {
+
+input[type=text],
+input[type=password] {
     border-radius: 15px;
     width: 316px;
     height: 60px;
@@ -160,7 +164,7 @@ button:hover {
     margin-top: 50px;
     width: 80%;
     justify-content: space-between;
-    
+
 }
 
 .hero-title div h1 {
@@ -214,7 +218,7 @@ button:hover {
 
 }
 
-.container-2 h1{
+.container-2 h1 {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -225,15 +229,15 @@ button:hover {
     justify-content: center;
 }
 
-.container-2 .container-2-content .article-item{
+.container-2 .container-2-content .article-item {
     width: 380px;
     display: block;
     padding: 25px;
     background-color: var(--white-color);
     border-radius: 25px;
-    box-shadow: 0px 5px 5px 0px rgba(0,156,255,0.75);
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,156,255,0.75);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,156,255,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
 }
 
 .article-item-icon,
@@ -246,7 +250,7 @@ button:hover {
 /* Header 3 */
 
 .container-3 {
-    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .container-3 button {
@@ -263,12 +267,11 @@ button:hover {
 .article-detail {
     display: flex;
     align-items: center;
-    margin:0 auto;
-    width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
-.article-detail-img{
+.article-detail-img {
     width: 550px;
 }
 
@@ -276,7 +279,7 @@ button:hover {
     width: 600px;
     height: 300px;
     margin: 0px 30px;
-    
+
 }
 
 .article-detail-content h1,
@@ -289,12 +292,11 @@ button:hover {
 .mentaltest-detail {
     display: flex;
     align-items: center;
-    margin:0 auto;
-    width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
-.mentaltest-detail-img{
+.mentaltest-detail-img {
     width: 550px;
 }
 
@@ -318,7 +320,7 @@ button:hover {
     margin-bottom: 80px;
 }
 
-.content-pelayanan button{
+.content-pelayanan button {
     width: 107px;
     height: 55px;
     padding: 14px 20px;
@@ -335,7 +337,7 @@ button:hover {
     background-color: transparent;
 }
 
-.content-pelayanan-isi h1{
+.content-pelayanan-isi h1 {
     background-color: transparent;
     margin-top: 0;
     margin-bottom: 10px;
@@ -404,6 +406,7 @@ button:hover {
     font-weight: 600;
     font-size: 20px;
 }
+
 /* End Header */
 
 /* footer */
@@ -423,7 +426,7 @@ button:hover {
     margin: auto;
     justify-content: space-between;
     background-color: transparent;
-    border-bottom:2px solid var(--white-color);
+    border-bottom: 2px solid var(--white-color);
     padding-bottom: 20px;
 }
 
@@ -431,28 +434,29 @@ button:hover {
     background-color: transparent;
 }
 
-.footer-content p{
+.footer-content p {
     background-color: transparent;
     opacity: 50%;
     font-weight: 400;
 }
 
-.footer-content img{
+.footer-content img {
     background-color: transparent;
 }
 
-.footer-content h2{
+.footer-content h2 {
     background-color: transparent;
     margin-bottom: 10px;
 }
 
-.footer-content div{
+.footer-content div {
     background-color: transparent;
 }
 
 
 
-.footer-bottom, .footer-bottom p {
+.footer-bottom,
+.footer-bottom p {
     background-color: transparent;
     text-align: center;
     padding-top: 10px;
@@ -462,4 +466,45 @@ button:hover {
     display: flex;
     width: 50%;
     justify-content: space-between;
+}
+
+/* Article */
+.article-main-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.article-main-card-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.article-main-card {
+    display: grid;
+    row-gap: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.article-main-card img {
+    width: 350px;
+    height: 300px;
+}
+
+.article-main-card p,
+.article-main-card a,
+.article-main-card div {
+    background-color: transparent;
+}
+
+.article-main-card p {
+    font-weight: bold;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Hero from '../components/HomepageItem/Hero'
 import OurService from '../components/HomepageItem/OurService'
-import ServiceContent from '../components/HomepageItem/ServiceContent'
 import Team from '../components/HomepageItem/Team'
 import Footer from '../components/Footer'
 
@@ -11,7 +10,6 @@ export default class HomePage extends Component {
       <div>
         <Hero />
         <OurService />
-        <ServiceContent />
         <Team />
         <Footer />
       </div>

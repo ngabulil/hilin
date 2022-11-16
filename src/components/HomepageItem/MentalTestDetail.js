@@ -13,8 +13,7 @@ export default function MentalTestDetail() {
         </div>     
         <div className='mentaltest-detail-img'>
             <img src={MentalDetailIcon} alt='Article Icon'></img>
-        </div>
-            
+        </div>           
     </div>
   )
 }

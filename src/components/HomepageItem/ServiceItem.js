@@ -11,8 +11,6 @@ export default class ServiceItem extends Component {
             <h3>{this.props.title}</h3>
             <p>{this.props.description}</p>
         </div>
-        <div>
-        </div>
     </div>
     )
   }
