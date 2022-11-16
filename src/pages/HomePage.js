@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
-import HeaderHomepage1 from '../components/HomepageItem/HeaderHomepage1'
-import HeaderHomepage2 from '../components/HomepageItem/HeaderHomepage2'
-import HeaderHomepage3 from '../components/HomepageItem/HeaderHomepage3'
+import Hero from '../components/HomepageItem/Hero'
+import OurService from '../components/HomepageItem/OurService'
+import ServiceContent from '../components/HomepageItem/ServiceContent'
+import Team from '../components/HomepageItem/Team'
+import Footer from '../components/Footer'
 
 export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <HeaderHomepage1 />
-        <HeaderHomepage2 />
-        <HeaderHomepage3 />
+        <Hero />
+        <OurService />
+        <ServiceContent />
+        <Team />
+        <Footer />
       </div>
     )
   }
