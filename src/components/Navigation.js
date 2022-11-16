@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../style/style.css'
-import Logo from '../asset/Logo.png'
 
+import Logo from '../assets/Logo.png'
+import { Link } from 'react-router-dom';
 export class Navigation extends Component {
   render() {
     return (
@@ -12,14 +13,15 @@ export class Navigation extends Component {
             </div>
             <div className='menu'>
                 <ul>
-                    <li>Home</li>
-                    <li>Article</li>
-                    <li>Mental Test</li>
-                    <li>Konsultasi</li>
+
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/article'>Article</Link></li>
+                    <li><Link to='/mentaltest'>Mental Test</Link></li>
+                    <li><Link to='/konsultasi'>Konsultasi</Link></li>
                 </ul>
             </div>
             <div className='login'>
-                <button className='btn-login'>Login</button>
+              <Link to='/login'><button className='btn-login'>Login</button></Link>
             </div>
         </nav>
       </div>
