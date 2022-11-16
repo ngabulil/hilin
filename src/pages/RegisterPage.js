@@ -3,6 +3,7 @@
 import React, { Component } from 'react'
 import Navigation from '../components/Navigation'
 import LoginImg from '../assets/login.png'
+import { Link } from 'react-router-dom'
 
 export default class RegisterPage extends Component {
   render() {
@@ -15,7 +16,7 @@ export default class RegisterPage extends Component {
                     <img src={LoginImg}/>
                 </div>
                 <div>
-                    <form>
+                    <form className='register'>
                       <div className="register-info">
                       <h2>Register</h2>
                         <label><b>Username</b></label>
@@ -25,7 +26,7 @@ export default class RegisterPage extends Component {
                         <label><b>Confirm Password</b></label>
                         <input type="password" placeholder="Confirm Password" name="psw" required/>
                         <button className="button-login"type="submit">Register</button>
-                        <p className='info-login'>Sudah Punya akun? Silahkan <a href="/">Login</a></p>
+                        <p className='info-login'>Sudah Punya akun? Silahkan <Link to='/login'>Login</Link></p>
                       </div>
                     </form>
                 </div>

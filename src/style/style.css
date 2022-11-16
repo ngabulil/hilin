@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
 * {
     background-color: var(--bg-color);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
     --primary-color: #2135E3;
     --hover-color: #0012af;
-    --secondary-color: #D9D9D9 ;
+    --secondary-color: #D9D9D9;
     --black-color: #181818;
     --white-color: #ffffff;
     --bg-color: #F9FBFC;
 }
 
-/* NavbarLogin */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
 
 /* Navigation */
 
@@ -25,13 +34,14 @@ nav {
     justify-content: space-around;
     border-bottom: 2px solid var(--primary-color);
     height: 60px;
+    align-items: center;
 }
+
 .logo {
     margin-top: -14px;
 }
 
 nav .menu ul {
-    margin-top: 18px;
     display: flex;
     list-style-type: none;
     column-gap: 16px;
@@ -49,15 +59,19 @@ nav .menu ul li a:hover {
 }
 
 .btn-login {
-    margin-top: 7px;
     background-color: var(--primary-color);
     padding: 7px 40px;
-    color: var(--white-color);
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
-    
+    color: var(--white-color)
+}
+
+.btn-login a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 /* Login */
@@ -74,11 +88,18 @@ nav .menu ul li a:hover {
 
 form {
     background-color: var(--white-color);
-    margin-top: 40px;
+    margin-top: 80px;
     border-radius: 40px;
-    box-shadow: 2px 2px 2px var(--black-color);
+    /* box-shadow: 2px 2px 2px var(--black-color); */
+    filter: drop-shadow(2px 2px 2px black);
 }
-input[type=text], input[type=password] {
+
+.register {
+    margin-top: 30px;
+}
+
+input[type=text],
+input[type=password] {
     border-radius: 15px;
     width: 316px;
     height: 60px;
@@ -134,3 +155,356 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/* Headerr */
+
+.container-1 {
+    display: flex;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    width: 80%;
+    justify-content: space-between;
+
+}
+
+.hero-title div h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero-title div p {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.header-3 {
+    width: 434px;
+    margin-bottom: 30px;
+}
+
+.header-logo img {
+    width: 600px;
+}
+
+.btn-started-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-started {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 190px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-selengkapnya {
+    width: 188px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-2 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+
+}
+
+.container-2 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-2 .container-2-content {
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+.container-2 .container-2-content .article-item {
+    width: 380px;
+    display: block;
+    padding: 25px;
+    background-color: var(--white-color);
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+}
+
+.article-item-icon,
+.article-item-content,
+.article-item-content h3,
+.article-item-content p {
+    background-color: var(--white-color);
+}
+
+/* Header 3 */
+
+.container-3 {
+    margin-top: 70px;
+}
+
+.container-3 button {
+    padding: -1px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.article-detail {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.article-detail-img {
+    width: 550px;
+}
+
+.article-detail-content {
+    width: 600px;
+    height: 300px;
+    margin: 0px 30px;
+
+}
+
+.article-detail-content h1,
+.article-detail-content p,
+.mentaltest-detail-content h1,
+.mentaltest-detail-content p {
+    margin-bottom: 24px;
+}
+
+.mentaltest-detail {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.mentaltest-detail-img {
+    width: 550px;
+}
+
+.mentaltest-detail .mentaltest-detail-content {
+    width: 600px;
+}
+
+/* header 4 */
+.container-4 {
+    margin-bottom: 50px;
+}
+
+.content-pelayanan {
+    background-image: linear-gradient(#545DF3, #000DFF);
+    color: var(--white-color);
+    width: 80%;
+    margin: auto;
+    padding: 50px 150px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.content-pelayanan button {
+    width: 107px;
+    height: 55px;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-color);
+    background-color: var(--bg-color);
+    border-radius: 50px;
+    border: none;
+    margin-top: 10px;
+}
+
+.content-pelayanan div {
+    background-color: transparent;
+}
+
+.content-pelayanan-isi h1 {
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content-pelayanan-isi p {
+    background-color: transparent;
+}
+
+.content-team {
+    width: 80%;
+    margin: auto;
+}
+
+.content-team-header {
+    text-align: center;
+}
+
+.content-team-header p {
+    color: var(--secondary-color);
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.content-team-main {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.team-project {
+    background-color: var(--white-color);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.team-project-content {
+    background-color: transparent;
+}
+
+.team-project-content-isi {
+    display: flex;
+    column-gap: 20px;
+}
+
+.team-project-content-isi p {
+    margin: 0;
+}
+
+.team-project-content p {
+    background-color: transparent;
+    margin-top: 0;
+}
+
+.team-project-content div {
+    background-color: transparent;
+}
+
+.team-project-content div h5 {
+    background-color: transparent;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* End Header */
+
+/* footer */
+.footer-wrapper {
+    background-color: #0A0E31;
+    color: var(--white-color);
+}
+
+.footer-container {
+    padding: 40px 40px 10px 40px;
+    background-color: transparent;
+}
+
+.footer-main {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: 20px;
+}
+
+.footer-content {
+    background-color: transparent;
+}
+
+.footer-content p {
+    background-color: transparent;
+    opacity: 50%;
+    font-weight: 400;
+}
+
+.footer-content img {
+    background-color: transparent;
+}
+
+.footer-content h2 {
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.footer-content div {
+    background-color: transparent;
+}
+
+
+
+.footer-bottom,
+.footer-bottom p {
+    background-color: transparent;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.sosmed {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+/* Article */
+.article-main-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.article-main-card-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.article-main-card {
+    display: grid;
+    row-gap: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.article-main-card img {
+    width: 350px;
+    height: 300px;
+}
+
+.article-main-card p,
+.article-main-card a,
+.article-main-card div {
+    background-color: transparent;
+}
+
+.article-main-card p {
+    font-weight: bold;
+}

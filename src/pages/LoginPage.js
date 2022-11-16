@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
-import NavbarLogin from '../components/NavbarLogin'
 import LoginImg from '../assets/login.png'
+import { Link } from 'react-router-dom'
+import Navigation from '../components/Navigation'
 
 export default class LoginPage extends Component {
   render() {
     return (
       <div>
-        <NavbarLogin />
+        <Navigation />
         <main>
             <div className='login-page'>
                 <div>
@@ -20,7 +21,7 @@ export default class LoginPage extends Component {
                         <label><b>Password</b></label>
                         <input type="password" placeholder="Password" name="psw" required/>
                         <button className="button-login"type="submit">Login</button>
-                        <p className='info-login'>Belum Punya akun? Silahkan <a href="/">Register</a></p>
+                        <p className='info-login'>Belum Punya akun? Silahkan <Link to='/register'>Register</Link></p>
                       </div>
                     </form>
                 </div>
