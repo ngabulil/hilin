@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
+
 * {
     background-color: var(--bg-color);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -12,11 +14,13 @@
 :root {
     --primary-color: #2135E3;
     --hover-color: #0012af;
+
     --secondary-color: #D9D9D9;
     --black-color: #181818;
     --white-color: #ffffff;
     --bg-color: #F9FBFC;
 }
+
 
 ::-webkit-scrollbar {
     width: 4px;
@@ -25,7 +29,6 @@
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
 }
-
 /* Navigation */
 
 nav {
@@ -34,14 +37,15 @@ nav {
     justify-content: space-around;
     border-bottom: 2px solid var(--primary-color);
     height: 60px;
+
     align-items: center;
 }
-
 .logo {
     margin-top: -14px;
 }
 
 nav .menu ul {
+
     display: flex;
     list-style-type: none;
     column-gap: 16px;
@@ -59,6 +63,7 @@ nav .menu ul li a:hover {
 }
 
 .btn-login {
+
     background-color: var(--primary-color);
     padding: 7px 40px;
     font-size: 20px;
@@ -80,6 +85,7 @@ nav .menu ul li a:hover {
     display: flex;
     justify-content: space-around;
 }
+
 
 .hero-login img {
     width: 535px;
@@ -128,6 +134,7 @@ button:hover {
 }
 
 .login-info {
+
     padding: 20px 38px;
     border-radius: 40px;
     width: 390px;
@@ -508,3 +515,4 @@ button:hover {
 .article-main-card p {
     font-weight: bold;
 }
+

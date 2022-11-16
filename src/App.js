@@ -16,6 +16,7 @@ function App() {
         <Route path='/article' element={<ArticlePage />} />
       </Routes>
     </BrowserRouter>
+
   );
 }
 

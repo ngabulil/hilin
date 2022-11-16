@@ -22,6 +22,7 @@ export default class LoginPage extends Component {
                         <input type="password" placeholder="Password" name="psw" required/>
                         <button className="button-login"type="submit">Login</button>
                         <p className='info-login'>Belum Punya akun? Silahkan <Link to='/register'>Register</Link></p>
+
                       </div>
                     </form>
                 </div>
