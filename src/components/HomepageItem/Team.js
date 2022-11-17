@@ -1,6 +1,6 @@
-import React from 'react'
-import TeamProject from './TeamProject'
-import Button from '../Button'
+import React from 'react';
+import TeamProject from './TeamProject';
+import Button from '../Button';
 
 export default function HeaderHomepage4() {
   return (

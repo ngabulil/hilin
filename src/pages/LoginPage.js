@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import React, { Component } from 'react'
-import LoginImg from '../assets/login.png'
-import { Link } from 'react-router-dom'
-import Navigation from '../components/Navigation'
+import React, { Component } from 'react';
+import LoginImg from '../assets/login.png';
+import { Link } from 'react-router-dom';
+import Navigation from '../components/Navigation';
 
 export default class LoginPage extends Component {
   render() {

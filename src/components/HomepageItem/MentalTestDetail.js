@@ -1,7 +1,6 @@
-import React from 'react'
-import MentalDetailIcon from '../../assets/mental test.png'
-import Button from '../Button'
-
+import React from 'react';
+import MentalDetailIcon from '../../assets/mental test.png';
+import Button from '../Button';
 
 export default function MentalTestDetail() {
   return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../style/style.css'
-import Logo from '../assets/Logo.png'
+import '../style/style.css';
+import Logo from '../assets/Logo.png';
 import { Link } from 'react-router-dom';
 
 export class Navigation extends Component {

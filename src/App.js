@@ -1,5 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/jsx-filename-extension */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './style/style.css';
 import HomePage from './pages/HomePage';

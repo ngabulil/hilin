@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import ImgOrang from '../../assets/orang.png'
+import React, { Component } from 'react';
+import ImgOrang from '../../assets/orang.png';
 
 export default class TeamProject extends Component {
   render() {
