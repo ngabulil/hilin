@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import LogoFooter from '../assets/logo-footer.png'
-import LogoYT from '../assets/youtube.png'
-import LogoFB from '../assets/facebook.png'
-import LogoWA from '../assets/whatsapp.png'
+import React, { Component } from 'react';
+import LogoFooter from '../assets/logo-footer.png';
+import LogoYT from '../assets/youtube.png';
+import LogoFB from '../assets/facebook.png';
+import LogoWA from '../assets/whatsapp.png';
 
 export default class Footer extends Component {
   render() {

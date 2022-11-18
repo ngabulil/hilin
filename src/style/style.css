@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
-
 * {
     background-color: var(--bg-color);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -14,13 +12,11 @@
 :root {
     --primary-color: #2135E3;
     --hover-color: #0012af;
-
     --secondary-color: #D9D9D9;
     --black-color: #181818;
     --white-color: #ffffff;
     --bg-color: #F9FBFC;
 }
-
 
 ::-webkit-scrollbar {
     width: 4px;
@@ -29,6 +25,7 @@
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
 }
+
 /* Navigation */
 
 nav {
@@ -37,15 +34,14 @@ nav {
     justify-content: space-around;
     border-bottom: 2px solid var(--primary-color);
     height: 60px;
-
     align-items: center;
 }
+
 .logo {
     margin-top: -14px;
 }
 
 nav .menu ul {
-
     display: flex;
     list-style-type: none;
     column-gap: 16px;
@@ -63,7 +59,6 @@ nav .menu ul li a:hover {
 }
 
 .btn-login {
-
     background-color: var(--primary-color);
     padding: 7px 40px;
     font-size: 20px;
@@ -85,7 +80,6 @@ nav .menu ul li a:hover {
     display: flex;
     justify-content: space-around;
 }
-
 
 .hero-login img {
     width: 535px;
@@ -134,7 +128,6 @@ button:hover {
 }
 
 .login-info {
-
     padding: 20px 38px;
     border-radius: 40px;
     width: 390px;
@@ -491,6 +484,8 @@ button:hover {
 
 .article-main-card {
     display: grid;
+    width: 340px;
+    height: 452px;
     row-gap: 30px;
     padding: 20px;
     text-align: center;
@@ -502,17 +497,47 @@ button:hover {
 }
 
 .article-main-card img {
-    width: 350px;
-    height: 300px;
-}
-
-.article-main-card p,
-.article-main-card a,
-.article-main-card div {
-    background-color: transparent;
+    width: 320px;
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: -8px -10px;
 }
 
 .article-main-card p {
+    height: 50px;
+    margin: -10px;
     font-weight: bold;
 }
 
+.article-header {
+    display: flex;
+    margin: 25px 120px;
+    column-gap: 40px;
+}
+
+.article-header-main {
+    margin: 25px 120px;
+}
+
+.article-hero img {
+    width: 630px;
+    height: 348px;
+    margin-bottom: 15px;
+}
+
+.article-hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.article-description {
+    width: 393px;
+    height: 400px;
+    margin-top: 75px;
+}
+
+.article-description p {
+    text-align: justify;
+    font-weight: 500;
+}
