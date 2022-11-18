@@ -3,6 +3,8 @@ import '../style/style.css';
 import Logo from '../assets/Logo.png';
 import { Link } from 'react-router-dom';
 
+import Logo from '../assets/Logo.png'
+import { Link } from 'react-router-dom';
 export class Navigation extends Component {
   render() {
     return (

@@ -14,7 +14,7 @@ export default class LoginPage extends Component {
                 <div>
                     <form>
                       <div className="login-info">
-                      <h2>Login</h2>
+                        <h2>Login</h2>
                         <label><b>Username</b></label>
                         <input type="text" placeholder="Username" name="uname" required/>
                         <label><b>Password</b></label>

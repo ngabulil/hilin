@@ -29,16 +29,15 @@ function ArticlePage() {
             <h1>Article Terbaru</h1>
           </div>
           <div className="article-main-card-wrap">
-
             {
-                            Article.map((Article) => (
-                              <div className="article-main-card" key={Article.id}>
-                                <img src={Article.img} alt="viva icon" />
-                                <p>{Article.title}</p>
-                                <a href={Article.link} target="blank"><Button name="Selengkapnya" /></a>
-                              </div>
-                            ))
-                        }
+              Article.map((Article) => (
+                <div className="article-main-card" key={Article.id}>
+                  <img src={Article.img} alt="viva icon" />
+                  <p>{Article.title}</p>
+                  <a href={Article.link} target="blank"><Button name="Selengkapnya" /></a>
+                 </div>
+              ))
+             }
           </div>
         </div>
         <Footer />

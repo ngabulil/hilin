@@ -9,5 +9,3 @@ export default class GetStartBtn extends Component {
     )
   }
 }
-
-
