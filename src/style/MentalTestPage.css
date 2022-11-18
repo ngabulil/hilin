@@ -1,0 +1,133 @@
+.mentaltest-main-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mentaltest-start-container {
+    margin-bottom: 150px;
+    width: 509px;
+}
+
+.mentaltest-description-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.mentaltest-description-container .button-start-test {
+    background-color: var(--primary-color);
+    margin-top: 50px;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    width: 189px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.mentaltest-page {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px 0;
+}
+
+.question-mentaltest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background: white;
+    min-height: 100vh;
+    width: 1063px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 845px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.question-header {
+    height: 80px;
+    background: #D9D9D9;
+}
+
+.question-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 75px;
+    width: 845px;
+    background: white;
+}
+
+.answer-section {
+    height: 70px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    width: 845px;
+    margin-top: 70px;
+    background: white;
+}
+
+.button-box .btn {
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    width: 189px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-next {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-previous {
+    background-color: var(--white-color) !important;
+    border: 1px solid black !important;
+    color: var(--black-color) !important;
+    cursor: pointer !important;
+}
+
+.btn-submit {
+    text-align: center;
+    background-color: #FD412A;
+    color: var(--white-color);
+}
+
+.btn-next:disabled {
+    opacity: .25;
+    cursor: not-allowed;
+}
+
+.summary-mentaltest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background: white;
+    width: 1063px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
