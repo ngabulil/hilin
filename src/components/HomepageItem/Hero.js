@@ -1,8 +1,8 @@
-import React from 'react'
-import Navigation from '../Navigation'
-import Button from '../Button'
-import ButtonMore from './ButtonMore'
-import Hero from '../../assets/Hero.png'
+import React from 'react';
+import Navigation from '../Navigation';
+import Button from '../Button';
+import ButtonMore from './ButtonMore';
+import Hero from '../../assets/Hero.png';
 
 export default function HeaderHomepage1() {
   return (
