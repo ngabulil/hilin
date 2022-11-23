@@ -1,6 +1,7 @@
 .mentaltest-main-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
@@ -16,7 +17,7 @@
     align-items: center;
 }
 
-.mentaltest-description-container .button-start-test {
+.mentaltest-description-container .button-start-test, .button-start-consultation {
     background-color: var(--primary-color);
     margin-top: 50px;
     padding: 15px 0;
@@ -33,6 +34,8 @@
 .mentaltest-page {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 70vh;
     margin: 50px 0 100px 0;
 }
 
@@ -40,7 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 100px;
     background: white;
     min-height: 100vh;
     width: 1063px;
@@ -52,7 +55,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 845px;
+    text-align: center;
+    width: 100%;
+    padding: 20px 30px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -66,14 +71,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 20px;
     min-height: 75px;
-    width: 845px;
+    width: 100%;
     background: white;
 }
 
 .answer-section {
-    height: 70px;
+    min-height: 70px;
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -81,7 +87,7 @@
 .button-box {
     display: flex;
     justify-content: space-between;
-    width: 845px;
+    width: 100%;
     margin-top: 70px;
     background: white;
 }
@@ -116,18 +122,98 @@
     color: var(--white-color);
 }
 
-.btn-next:disabled {
+.btn-next:disabled, .btn-submit:disabled{
     opacity: .25;
     cursor: not-allowed;
 }
 
-.summary-mentaltest-container {
+.result-mentaltest-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px;
     background: white;
-    width: 1063px;
+    width: 65%;
+    height: 50%;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.result-mentaltest-condition {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: white;
+    text-align: center;
+}
+
+.result-mentaltest-description, .result-mentaltest-facility {
+    font-size: .875em;
+    font-weight: 400;
+    width: 90%;
+    background: white;
+}
+
+.result-mentaltest-description {
+    text-align: justify;
+}
+
+.result-mentaltest-description p {
+    background: white;
+    margin-bottom: 6px;
+}
+
+.result-mentaltest-facility{
+    text-align: center;
+}
+
+.button-start-consultation {
+    padding: 15px !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .question-mentaltest-container{
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .question-mentaltest-container{
+        width: 90%;
+        margin: 0 100px;
+        padding: 50px 25px;
+    }
+
+    .button-box .btn {
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+
+    .btn-next, .btn-submits {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mentaltest-start-container {
+        width: 100%;
+        padding: 0 45px;
+    }
+
+    .mentaltest-start-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .mentaltest-description-container .button-start-test{
+        padding: 14px 0;
+        font-size: 18px;
+        width: 130px;
+        height: 55px;
+    }
+    
+    .result-mentaltest-container{
+        width: 90%;
+    }
 }

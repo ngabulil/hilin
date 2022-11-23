@@ -6,7 +6,7 @@ import RegisterPage from './pages/RegisterPage';
 import ArticlePage from './pages/ArticlePage';
 import MentalTestHomePage from './pages/MentalTestHomePage';
 import MentalTestPage from './pages/MentalTestPage';
-import MentalTestSummaryPage from './pages/MentalTestSummaryPage';
+import MentalTestResultPage from './pages/MentalTestResultPage';
 import './style/style.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/article" element={<ArticlePage />} />
         <Route path="/mentaltest" element={<MentalTestHomePage />} />
         <Route path="/mentaltest/start" element={<MentalTestPage />} />
-        <Route path="/mentaltest/summary" element={<MentalTestSummaryPage />} />
+        <Route path="/mentaltest/result" element={<MentalTestResultPage />} />
       </Routes>
     </BrowserRouter>
   );

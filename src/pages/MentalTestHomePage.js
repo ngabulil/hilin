@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const MentalTestHomePage = () => {
     return (
-        <div className=''>
+        <div>
             <Navigation />
             <StartMentalTest />
             <Footer />
