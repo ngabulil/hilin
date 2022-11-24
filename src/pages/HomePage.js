@@ -7,12 +7,12 @@ import Footer from '../components/Footer';
 export default class HomePage extends Component {
   render() {
     return (
-      <div className='homepage'>
+      <div>
         <Hero />
         <OurService />
         <Team />
         <Footer />
       </div>
-    );
+    )
   }
 }
