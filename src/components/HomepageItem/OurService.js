@@ -10,7 +10,7 @@ import Konsultasi from '../../assets/konsultasi.png';
 
 export default function HeaderHomepage2() {
   return (
-    <div className="container-2">
+    <div className="container-2" data-aos="fade-up" data-aos-duration="2000">
       <h1>Our Service</h1>
       <div className="container-2-content">
         <ServiceItem
@@ -30,7 +30,7 @@ export default function HeaderHomepage2() {
         />
       </div>
       <div className="container-3">
-        <div className="article-detail">
+        <div className="article-detail" data-aos="fade-right" data-aos-duration="1500">
           <div className="article-detail-img">
             <img src={ArticleImg} alt="Article Icon" />
           </div>
@@ -56,7 +56,7 @@ export default function HeaderHomepage2() {
             <Button name="Mulai" />
           </div>
         </div>
-        <div className="mentaltest-detail">
+        <div className="mentaltest-detail" data-aos="fade-left" data-aos-duration="1500">
           <div className="mentaltest-detail-content">
             <h1>Mental Test</h1>
             <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
@@ -66,7 +66,7 @@ export default function HeaderHomepage2() {
             <img src={MentalDetailIcon} alt="Article Icon" />
           </div>
         </div>
-        <div className="article-detail">
+        <div className="article-detail" data-aos="fade-right" data-aos-duration="1500">
           <div className="article-detail-img">
             <img src={Konsultasi} alt="Article Icon" />
           </div>

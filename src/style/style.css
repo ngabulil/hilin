@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 * {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color);  
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -369,7 +369,7 @@ button:hover {
 }
 
 .content-team-header p {
-    color: var(--secondary-color);
+    color: var(--black-color);
     width: 60%;
     margin: auto;
     margin-bottom: 30px;
@@ -386,6 +386,7 @@ button:hover {
     background-color: var(--white-color);
     border-radius: 30px;
     padding: 30px;
+    filter: drop-shadow(2px 2px 2px var(--primary-color));
 }
 
 .team-project-content {

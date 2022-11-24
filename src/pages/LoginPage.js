@@ -43,7 +43,7 @@ const LoginPage = () => {
     <div>
       <main>
         <div className='login-page'>
-          <div className='form-login'>
+          <div className='form-login' data-aos="fade-right" data-aos-duration="1500">
             <Link className='a-homepage' to='/'><div className='to-homepage'><HiOutlineHome /> <p>Kembali Homepage</p></div></Link>
             {error ? <p>{error}</p> : null}
             <form onSubmit={handleSubmit}>
@@ -59,7 +59,7 @@ const LoginPage = () => {
               </div>
             </form>
           </div>
-          <div className='hero-login'>
+          <div className='hero-login' data-aos="fade-left" data-aos-duration="1500">
             <img src={LoginImg} />
           </div>
         </div>
