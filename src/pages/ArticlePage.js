@@ -35,9 +35,9 @@ function ArticlePage() {
                   <img src={Article.img} alt="viva icon" />
                   <p>{Article.title}</p>
                   <a href={Article.link} target="blank"><Button name="Selengkapnya" /></a>
-                 </div>
+                </div>
               ))
-             }
+            }
           </div>
         </div>
         <Footer />

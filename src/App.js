@@ -1,10 +1,13 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './style/style.css';
 import HomePage from './pages/HomePage';
-
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ArticlePage from './pages/ArticlePage';
+import MentalTestHomePage from './pages/MentalTestHomePage';
+import MentalTestPage from './pages/MentalTestPage';
+import MentalTestResultPage from './pages/MentalTestResultPage';
+import './style/style.css';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/article" element={<ArticlePage />} />
+        <Route path="/mentaltest" element={<MentalTestHomePage />} />
+        <Route path="/mentaltest/start" element={<MentalTestPage />} />
+        <Route path="/mentaltest/result" element={<MentalTestResultPage />} />
       </Routes>
     </BrowserRouter>
   );
