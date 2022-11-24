@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { mentalTestData as testData } from '../../data/mentalTestData';
 import '../../style/MentalTestPage.css';
 
@@ -8,10 +8,10 @@ export default function QuestionMentalTest() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [mentalTestData, setMentalTestData] = useState(testData);
   const { question, options, selected } = mentalTestData[currentIndex];
-  const [score, setScore] = useState({
-    correct: 0,
-    false: 0,
-  });
+  // const [score, setScore] = useState({
+  //   correct: 0,
+  //   false: 0,
+  // });
 
   const nextQuestion = () => {
     if(mentalTestData.length - 1 === currentIndex) return;
