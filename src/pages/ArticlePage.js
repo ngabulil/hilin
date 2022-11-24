@@ -32,12 +32,12 @@ function ArticlePage() {
       <div className="article-page-container">
         {articlepop.map((data) => (
           <main className="article-header-container" key={data.id}>
-            <h1 className="article-header-container-h1">Article Terpopuler</h1>
+            <h1 className="article-header-container-h1" data-aos="fade-down" data-aos-duration="1500">Article Terpopuler</h1>
             <div className="article-header">
-              <div className="article-hero">
+              <div className="article-hero" data-aos="fade-right" data-aos-duration="1500">
                 <img src={data.img} alt="article terbaru" />
               </div>
-              <div className="article-description">
+              <div className="article-description" data-aos="fade-left" data-aos-duration="1500">
                 <h1>{data.title}</h1>
                 <p>
                   {data.desc}
@@ -50,12 +50,12 @@ function ArticlePage() {
           </main>
         ))}
         <div className="article-header-main">
-          <div className="article-hero">
+          <div className="article-hero" data-aos="fade-up" data-aos-duration="1500">
             <h1>Article Terbaru</h1>
           </div>
           <div className="article-main-card-wrap">
             {articlenew.map((data) => (
-              <div className="article-main-card" key={data.id}>
+              <div className="article-main-card" key={data.id} data-aos="fade-up" data-aos-duration="1500">
                 <img src={data.img} alt="viva icon" />
                 <p>{data.title}</p>
                 <a href={data.link} target="blank">

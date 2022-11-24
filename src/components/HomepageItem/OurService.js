@@ -43,12 +43,12 @@ export default function HeaderHomepage2() {
             <Button name="Mulai" />
           </div>
         </div>
-        <div className="article-detail-mob">
+        <div className="article-detail-mob" data-aos="fade-left" data-aos-duration="1500">
           <div className="article-detail-img">
             <img src={MentalDetailIcon} alt="Article Icon" />
           </div>
           <div className="article-detail-content">
-            <h1>Article</h1>
+            <h1>Mental Test</h1>
             <div className="article-detail-img-1">
             <img src={MentalDetailIcon} alt="Article Icon" />
           </div>
