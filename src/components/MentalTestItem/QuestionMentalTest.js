@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { mentalTestData as testData } from '../../data/mentalTestData';
 import '../../style/MentalTestPage.css';
 
@@ -8,10 +8,10 @@ export default function QuestionMentalTest() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [mentalTestData, setMentalTestData] = useState(testData);
   const { question, options, selected } = mentalTestData[currentIndex];
-  const [score, setScore] = useState({
-    correct: 0,
-    false: 0,
-  });
+  // const [score, setScore] = useState({
+  //   correct: 0,
+  //   false: 0,
+  // });
 
   const nextQuestion = () => {
     if(mentalTestData.length - 1 === currentIndex) return;
@@ -24,19 +24,6 @@ export default function QuestionMentalTest() {
   };
 
   const selectOptions = (indexSelected, indexOptionSelected) => {
-    // mentalTestData.map((item, index) =>
-    //   index === indexSelected 
-    //   ?  
-    //     item.options.map((option, index) => 
-    //       index === indexOptionSelected 
-    //       ?
-    //         setHasil(hasil+option.score)
-    //       :
-    //         null
-    //     )
-    //   : 
-    //     null
-    // )
     setMentalTestData(
       mentalTestData.map((item, index) =>
         index === indexSelected 
@@ -94,19 +81,12 @@ export default function QuestionMentalTest() {
           <button 
             onClick={() => previousQuestion()}
             className="btn btn-previous"
-            // disabled={currentIndex === 0 ? true : false}
             style={{ visibility: currentIndex === 0 ? 'hidden' : 'visible' }}
           >
             Sebelumnya
           </button>
           {mentalTestData.length - 1 === currentIndex 
             ?
-              // <Link 
-              //   to="/mentaltest/result" state={{ finalResult: hasil }}
-              //   className="btn btn-submit"
-              // >
-              //   Akhiri Test
-              // </Link>
               <button 
                 onClick={() => checkScore()}
                 className="btn btn-submit"

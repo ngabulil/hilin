@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 * {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color);  
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -70,15 +70,20 @@ nav .menu ul li a:hover {
 
 .btn-login a {
     text-decoration: none;
-    background-color: var(--primary-color);
     color: var(--white-color);
 }
 
 /* Login */
 
 .login-page {
+    margin-top: 40px;
     display: flex;
     justify-content: space-around;
+}
+
+.hero-login {
+    display: flex;
+    flex-direction: row;
 }
 
 .hero-login img {
@@ -87,15 +92,13 @@ nav .menu ul li a:hover {
 }
 
 form {
-    background-color: var(--white-color);
-    margin-top: 80px;
+    margin-top: 60px;
     border-radius: 40px;
-    /* box-shadow: 2px 2px 2px var(--black-color); */
     filter: drop-shadow(2px 2px 2px black);
 }
 
 .register {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 input[type=text],
@@ -109,17 +112,26 @@ input[type=password] {
     border: 1px solid var(--white-color);
 }
 
+.button-google {
+    width: 180px;
+    height: 50px;
+    border: none;
+    font-size: 14px;
+    margin: 0 70px;
+    cursor: pointer;
+}
+
 .button-login {
     border-radius: 15px;
     background-color: var(--primary-color);
     color: var(--white-color);
-    padding: 14px 20px;
-    margin: 17px 66px;
+    padding: 4px 12px;
+    margin: 10px 105px;
     border: none;
     cursor: pointer;
-    width: 188px;
-    height: 60px;
-    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -151,7 +163,7 @@ button:hover {
     padding: 20px 38px;
     border-radius: 40px;
     width: 390px;
-    height: 520px;
+    height: 450px;
     margin-bottom: 10px;
 }
 
@@ -357,7 +369,7 @@ button:hover {
 }
 
 .content-team-header p {
-    color: var(--secondary-color);
+    color: var(--black-color);
     width: 60%;
     margin: auto;
     margin-bottom: 30px;
@@ -374,6 +386,7 @@ button:hover {
     background-color: var(--white-color);
     border-radius: 30px;
     padding: 30px;
+    filter: drop-shadow(2px 2px 2px var(--primary-color));
 }
 
 .team-project-content {
@@ -508,12 +521,25 @@ button:hover {
     height: 50px;
     margin: -10px;
     font-weight: bold;
+    background-color: transparent;
+}
+
+.article-main-card a {
+    background-color: transparent;
+}
+
+.article-main-card a div {
+    background-color: transparent;
 }
 
 .article-header {
     display: flex;
-    margin: 25px 120px;
+    margin: 0 120px;
     column-gap: 40px;
+}
+
+.article-header-container-h1 {
+    margin: 25px 120px;
 }
 
 .article-header-main {
@@ -532,12 +558,53 @@ button:hover {
 }
 
 .article-description {
-    width: 393px;
-    height: 400px;
-    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .article-description p {
     text-align: justify;
     font-weight: 500;
+    font-size: 17px;
+}
+
+/* Login */
+.to-homepage {
+    font-size: 22px;
+    align-items: center;
+    display: flex;
+    column-gap: 8px;
+    padding: 10px;
+}
+.to-homepage:hover {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.a-homepage {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.hamburger {
+    /* border: none; */
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+}
+
+.article-detail-img-1 {
+    display: none;
+}
+
+.article-detail-mob {
+    display: none;
+}
+
+.article-page-container {
+    margin: 10px 0 30px 0;
 }

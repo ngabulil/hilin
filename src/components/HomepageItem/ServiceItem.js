@@ -5,13 +5,13 @@ export default class ServiceItem extends Component {
     return (
       <div className='article-item'>
         <div className='article-item-icon'>
-            <img src={this.props.icon} alt='icon article'></img>
+          <img src={this.props.icon} alt='icon article'></img>
         </div>
         <div className='article-item-content'>
-            <h3>{this.props.title}</h3>
-            <p>{this.props.description}</p>
+          <h3>{this.props.title}</h3>
+          <p>{this.props.description}</p>
         </div>
-    </div>
+      </div>
     )
   }
 }

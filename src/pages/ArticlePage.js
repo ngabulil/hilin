@@ -1,47 +1,72 @@
-import React from 'react';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import Article from '../utils/data.json';
-import Button from '../components/Button';
-import ArticleImg from '../assets/header-article.jpg';
+import React from "react";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import Button from "../components/Button";
+import { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../config/Firebase";
 
 function ArticlePage() {
+  const [articlenew, setArticlenew] = useState([]);
+  const [articlepop, setArticlepop] = useState([]);
+
+  useEffect(() => {
+    const articlePop = async () => {
+      const getArticlepop = await getDocs(collection(db, "articlepop"));
+      setArticlepop(
+        getArticlepop.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+      );
+    };
+    const articleNew = async () => {
+      const getArticlenew = await getDocs(collection(db, "articlenew"));
+      setArticlenew(
+        getArticlenew.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+      );
+    };
+    articlePop();
+    articleNew();
+  }, []);
   return (
     <div className="article-page">
       <Navigation />
-      <div>
-        <main className="article-header">
-          <div className="article-hero">
-            <h1>Article Terpopuler</h1>
-            <img src={ArticleImg} alt="article terbaru" />
-            <h1>Pentingnya Menjaga Kesehatan Mental</h1>
-          </div>
-          <div className="article-description">
-            <p>
-              Kesehatan mental sama pentingnya dengan kesehatan fisik. Mental yang sehat  akan membuat pikiran menjadi positif sehingga tubuh akan berfungsi dengan baik secara emosional, psikologis,  sosial dan akan mempengaruhi cara berfikir, merasakan, dan berperilaku. Kesehatan mental yang baik juga membantu menentukan cara mengelola stres, berhubungan dengan orang lain, dan membuat sebuah pilihan. Jika kesehatan mental terganggu, pikiran, suasana hati, dan perilaku akan terpengaruh sehingga kondisi fisik dan kualitas hidupmu akan menurun.
-              {' '}
-              <a href="https://herminahospitals.com/id/articles/pentingnya-menjaga-kesehatan-mental.html" target="blank">Selengkapnya</a>
-            </p>
-          </div>
-        </main>
+      <div className="article-page-container">
+        {articlepop.map((data) => (
+          <main className="article-header-container" key={data.id}>
+            <h1 className="article-header-container-h1" data-aos="fade-down" data-aos-duration="1500">Article Terpopuler</h1>
+            <div className="article-header">
+              <div className="article-hero" data-aos="fade-right" data-aos-duration="1500">
+                <img src={data.img} alt="article terbaru" />
+              </div>
+              <div className="article-description" data-aos="fade-left" data-aos-duration="1500">
+                <h1>{data.title}</h1>
+                <p>
+                  {data.desc}
+                  <a href={data.link} target="blank">
+                    Selengkapnya
+                  </a>
+                </p>
+              </div>
+            </div>
+          </main>
+        ))}
         <div className="article-header-main">
-          <div className="article-hero">
+          <div className="article-hero" data-aos="fade-up" data-aos-duration="1500">
             <h1>Article Terbaru</h1>
           </div>
           <div className="article-main-card-wrap">
-            {
-              Article.map((Article) => (
-                <div className="article-main-card" key={Article.id}>
-                  <img src={Article.img} alt="viva icon" />
-                  <p>{Article.title}</p>
-                  <a href={Article.link} target="blank"><Button name="Selengkapnya" /></a>
-                </div>
-              ))
-            }
+            {articlenew.map((data) => (
+              <div className="article-main-card" key={data.id} data-aos="fade-up" data-aos-duration="1500">
+                <img src={data.img} alt="viva icon" />
+                <p>{data.title}</p>
+                <a href={data.link} target="blank">
+                  <Button name="Selengkapnya" />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
