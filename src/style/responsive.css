@@ -11,9 +11,15 @@
         display: none;
     }
 
+    nav .menu ul li a:hover {
+        /* border-bottom: 2px solid var(--primary-color); */
+    }
+
     /* end menu */
     .hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar {
@@ -25,15 +31,27 @@
         position: relative;
     }
 
+    nav .menu ul li a {
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    nav .menu ul {
+        row-gap: 10px;
+    }
+
     .navbar.expanded {
         /* height: 100vh; */
     }
 
     .navbar.expanded .menu {
+        filter: drop-shadow(3px 3px 3px var(--primary-color));
+        padding: 10px 0;
         display: block;
         /* height: 100vh; */
         position: absolute;
-        top: 65px;
+        top: 61px;
         left: 0;
         right: 0;
         z-index: 100;
@@ -47,6 +65,7 @@
     }
 
     .logo img {
+        margin-top: 5px;
         margin-left: 15px;
         width: 130px;
         height: 44px;
@@ -385,7 +404,9 @@
 
     /* end menu */
     .hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar {
@@ -405,7 +426,7 @@
         display: block;
         /* height: 100vh; */
         position: absolute;
-        top: 65px;
+        top: 61px;
         left: 0;
         right: 0;
         z-index: 100;
@@ -420,6 +441,7 @@
     }
 
     .logo img {
+        margin-top: -7px;
         margin-left: 15px;
         width: 160px;
         height: 54px;
@@ -624,7 +646,9 @@
 
     /* end menu */
     .hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar {
@@ -644,7 +668,7 @@
         display: block;
         /* height: 100vh; */
         position: absolute;
-        top: 65px;
+        top: 61px;
         left: 0;
         right: 0;
         z-index: 100;
@@ -659,6 +683,7 @@
     }
 
     .logo img {
+        margin-top: -7px;
         margin-left: 15px;
         width: 160px;
         height: 54px;
@@ -897,7 +922,9 @@
 
     /* end menu */
     .hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar {
@@ -914,13 +941,25 @@
     }
 
     .navbar.expanded .menu {
+        filter: drop-shadow(3px 3px 3px var(--primary-color));
+        padding: 10px 0;
         display: block;
         /* height: 100vh; */
         position: absolute;
-        top: 65px;
+        top: 61px;
         left: 0;
         right: 0;
         z-index: 100;
+    }
+
+    nav .menu ul li a {
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    nav .menu ul {
+        row-gap: 10px;
     }
 
     /* end navbar */
@@ -1739,7 +1778,7 @@
     .article-header-container-h1 {
         font-size: 28px;
         margin: auto;
-        max-width: 1145px;      
+        max-width: 1145px;
     }
 
     .article-hero h1 {

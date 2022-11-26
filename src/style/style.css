@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 * {
-    background-color: var(--bg-color);  
+    background-color: var(--bg-color);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -577,6 +577,7 @@ button:hover {
     column-gap: 8px;
     padding: 10px;
 }
+
 .to-homepage:hover {
     border-radius: 25px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -594,7 +595,7 @@ button:hover {
     display: none;
     width: 50px;
     height: 50px;
-    font-size: 22px;
+    font-size: 44px;
 }
 
 .article-detail-img-1 {
@@ -607,4 +608,14 @@ button:hover {
 
 .article-page-container {
     margin: 10px 0 30px 0;
+}
+
+.bar-load {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
 }
