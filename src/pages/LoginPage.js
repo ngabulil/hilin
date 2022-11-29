@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 import LoginImg from '../assets/login.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../config/AuthContext';
-import { FcGoogle } from 'react-icons/fc';
 import {HiOutlineHome} from 'react-icons/hi'
+import GoogleButton from 'react-google-button';
+import Swal from 'sweetalert2';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('')
@@ -28,8 +29,12 @@ const LoginPage = () => {
       await logIn(email, password)
       navigate('/')
     } catch (error) {
-      alert(error)
-      setError(error)
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Email/Password yang kamu masukkan salah !'
+      })
+      // setError(error)
     }
   };
 
@@ -54,7 +59,7 @@ const LoginPage = () => {
                 <label><b>Password</b></label>
                 <input onChange={(event) => setPassword(event.target.value)} type="password" placeholder="Password" name="psw" required />
                 <button className="button-login" type="submit">Login</button>
-                <button className='button-google' onClick={handleGoogleSignIn}>{<FcGoogle />} Masuk dengan Google</button>
+                <GoogleButton className='login-google' onClick={handleGoogleSignIn}/>
                 <p className='info-login'>Belum Punya akun? Silahkan <Link to='/register'>Register</Link></p>
               </div>
             </form>

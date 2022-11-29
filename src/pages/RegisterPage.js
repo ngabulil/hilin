@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import LoginImg from "../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../config/AuthContext";
-import { FcGoogle } from "react-icons/fc";
+import GoogleButton from "react-google-button";
+import Swal from "sweetalert2";
 
 const RegisterPage = () => {
   const { googleSignIn, user, signUp } = UserAuth();
@@ -25,7 +26,11 @@ const RegisterPage = () => {
       await signUp(email, password);
       navigate("/login");
     } catch (error) {
-      alert(error, "Invalid Email");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Email sudah terdaftar/Email yang dimasukkan salah !'
+      })
     }
   };
 
@@ -39,7 +44,11 @@ const RegisterPage = () => {
     <div>
       <div>
         <div className="login-page">
-          <div className="hero-login" data-aos="fade-right" data-aos-duration="1500">
+          <div
+            className="hero-login"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img src={LoginImg} />
           </div>
 
@@ -71,9 +80,7 @@ const RegisterPage = () => {
                 <button className="button-login" type="submit">
                   Register
                 </button>
-                <button className="button-google" onClick={handleGoogleSignIn}>
-                  {<FcGoogle />} Masuk dengan Google
-                </button>
+                <GoogleButton className='login-google' onClick={handleGoogleSignIn}/>
 
                 <p className="info-login">
                   Sudah Punya akun? Silahkan <Link to="/login">Login</Link>

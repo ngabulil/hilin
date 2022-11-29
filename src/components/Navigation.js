@@ -73,7 +73,7 @@ const Navigation = () => {
             {open && (
               <div ref={menu} className="dropdown">
                 <ul>
-                  <li>Profile</li>
+                  <li>Pesanan Saya</li>
                   <li className='li-logout' onClick={handleLogout}>Logout</li>
                 </ul>
               </div>
