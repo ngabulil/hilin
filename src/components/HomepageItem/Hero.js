@@ -9,7 +9,7 @@ export default function HeaderHomepage1() {
     <>
       <Navigation />
       <div className='container-1'>
-        <div className='hero-title'>
+        <div className='hero-title' data-aos="fade-right" data-aos-duration="1500">
           <div className='header-3'>
             <h1>Jaga Kesehan Mentalmu Dari Sekarang!</h1>
             <p>Health.in platform Free Mental Check Up menyediakan Layanan tes kesehatan mental, Menyedian Article untuk mengurasi rasa stress, dan menyediakan fitur konsultasi bersama Mentor Profesional.</p>
@@ -19,7 +19,7 @@ export default function HeaderHomepage1() {
             <Button name='Get Started' />
           </div>
         </div>
-        <div className='header-logo'>
+        <div className='header-logo' data-aos="fade-left" data-aos-duration="1500">
           <img src={Hero} alt='hero'></img>
         </div>
       </div>

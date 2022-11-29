@@ -5,7 +5,7 @@ import Button from '../Button';
 export default function HeaderHomepage4() {
   return (
     <div className='container-4'>
-      <div className='content-pelayanan'>
+      <div className='content-pelayanan' data-aos="fade-up" data-aos-duration="1500">
         <div className='content-pelayanan-isi'>
           <h1>Reservasi Pelayanan kami sekarang</h1>
           <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
@@ -13,7 +13,7 @@ export default function HeaderHomepage4() {
         <Button name='Mulai' className='content-pelayanan' />
       </div>
       <div className='content-team'>
-        <div className='content-team-header'>
+        <div className='content-team-header' data-aos="fade-up" data-aos-duration="1500">
           <h1>Our Team</h1>
           <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
         </div>

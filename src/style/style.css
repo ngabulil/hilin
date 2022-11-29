@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
 * {
-    background-color: var(--bg-color);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
 }
 
 :root {
@@ -58,6 +61,15 @@ nav .menu ul li a:hover {
     color: var(--hover-color);
 }
 
+.btn-user {
+    padding: 7px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--hover-color)
+}
 .btn-login {
     background-color: var(--primary-color);
     padding: 7px 40px;
@@ -85,12 +97,14 @@ nav .menu ul li a:hover {
     display: flex;
     flex-direction: row;
 }
+
 .hero-login img {
     width: 535px;
     height: 550px;
 }
 
 form {
+    background-color: var(--white-color);
     margin-top: 60px;
     border-radius: 40px;
     filter: drop-shadow(2px 2px 2px black);
@@ -98,6 +112,7 @@ form {
 
 .register {
     margin-top: 60px;
+    
 }
 
 input[type=text],
@@ -118,6 +133,7 @@ input[type=password] {
     font-size: 14px;
     margin: 0 70px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .button-login {
@@ -155,6 +171,11 @@ button:hover {
 
 .info-login {
     margin: 0 27px;
+    font-size: 14px;
+}
+
+.info-register {
+    margin: 0 32px;
     font-size: 14px;
 }
 
@@ -368,7 +389,7 @@ button:hover {
 }
 
 .content-team-header p {
-    color: var(--secondary-color);
+    color: var(--black-color);
     width: 60%;
     margin: auto;
     margin-bottom: 30px;
@@ -385,6 +406,7 @@ button:hover {
     background-color: var(--white-color);
     border-radius: 30px;
     padding: 30px;
+    filter: drop-shadow(2px 2px 2px var(--primary-color));
 }
 
 .team-project-content {
@@ -519,12 +541,25 @@ button:hover {
     height: 50px;
     margin: -10px;
     font-weight: bold;
+    background-color: transparent;
+}
+
+.article-main-card a {
+    background-color: transparent;
+}
+
+.article-main-card a div {
+    background-color: transparent;
 }
 
 .article-header {
     display: flex;
-    margin: 25px 120px;
+    margin: 0 120px;
     column-gap: 40px;
+}
+
+.article-header-container-h1 {
+    margin: 25px 120px;
 }
 
 .article-header-main {
@@ -543,12 +578,86 @@ button:hover {
 }
 
 .article-description {
-    width: 393px;
-    height: 400px;
-    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .article-description p {
     text-align: justify;
     font-weight: 500;
+    font-size: 17px;
+}
+
+/* Login */
+.to-homepage {
+    font-size: 22px;
+    align-items: center;
+    display: flex;
+    column-gap: 8px;
+    padding: 10px;
+}
+
+.to-homepage:hover {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.a-homepage {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.hamburger {
+    /* border: none; */
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 44px;
+}
+
+.article-detail-img-1 {
+    display: none;
+}
+
+.article-detail-mob {
+    display: none;
+}
+
+.article-page-container {
+    margin: 10px 0 30px 0;
+}
+
+.bar-load {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+}
+
+.login {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    width: auto;
+    background-color: var(--white-color);
+    border-radius: 8px;
+  
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover {
+    background-color: var(--primary-color);
 }

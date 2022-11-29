@@ -4,6 +4,7 @@ import LoginImg from '../assets/login.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../config/AuthContext';
 import { FcGoogle } from 'react-icons/fc';
+import {HiOutlineHome} from 'react-icons/hi'
 
 const LoginPage = () => {
   const [email, setEmail] = useState('')
@@ -42,8 +43,8 @@ const LoginPage = () => {
     <div>
       <main>
         <div className='login-page'>
-          <div>
-            <Link to='/'>Kembali HomePage</Link>
+          <div className='form-login' data-aos="fade-right" data-aos-duration="1500">
+            <Link className='a-homepage' to='/'><div className='to-homepage'><HiOutlineHome /> <p>Kembali Homepage</p></div></Link>
             {error ? <p>{error}</p> : null}
             <form onSubmit={handleSubmit}>
               <div className="login-info">
@@ -58,7 +59,7 @@ const LoginPage = () => {
               </div>
             </form>
           </div>
-          <div className='hero-login'>
+          <div className='hero-login' data-aos="fade-left" data-aos-duration="1500">
             <img src={LoginImg} />
           </div>
         </div>

@@ -39,11 +39,11 @@ const RegisterPage = () => {
     <div>
       <div>
         <div className="login-page">
-          <div className="hero-login">
+          <div className="hero-login" data-aos="fade-right" data-aos-duration="1500">
             <img src={LoginImg} />
           </div>
 
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1500">
             <form onSubmit={handleSubmit} className="register">
               <div className="register-info">
                 <h2>Register</h2>
@@ -75,7 +75,7 @@ const RegisterPage = () => {
                   {<FcGoogle />} Masuk dengan Google
                 </button>
 
-                <p className="info-login">
+                <p className="info-register">
                   Sudah Punya akun? Silahkan <Link to="/login">Login</Link>
                 </p>
               </div>
