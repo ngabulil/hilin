@@ -1,0 +1,328 @@
+.consul-header {
+  width: 80%;
+  margin-top: 75px;
+  margin-left: 75px;
+  margin-bottom: 100px;
+}
+.consul-header-content{
+  padding-left: 50px;
+}
+
+.header-title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.desc {
+  width: 472px;
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 10px;
+  color: black;
+  line-height: 30px;
+  margin-top: 40px;
+}
+
+.btn-konsultasi {
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 190px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.header-image img {
+  max-width: 100%;
+  margin-top: 50px; 
+  height: auto;
+  float: right;
+  display: flex;
+  width: 500px;
+}
+
+.consul-main {
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  margin: auto; 
+  margin-bottom: 80px;
+}
+
+.article-item {
+  padding: 25px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+  display: flex;
+}
+
+.article-item p{
+  background-color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.article-item-left {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  display: flex;
+  text-align: left;
+  background-color: white;
+  margin-right: 80px;
+}
+
+.article-item-left p{
+  margin-left: -15px;
+  margin-bottom: 50px;
+  background-color: transparent;
+}
+
+.article-item-left li{
+  background-color: transparent;
+}
+
+.article-item-left ul{
+  padding: 30px;
+  background-color: transparent;
+}
+
+.article-item-right {
+  margin-top: 45px;
+  background-color: var(--white-color);
+  box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
+  border-top-right-radius: 100px;
+  align-items: center;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.article-item-right ul{
+  text-align: left;
+  background-color: transparent;
+}
+
+.article-item-right li{
+  margin-top: -30px;
+  padding: 40px;
+  background-color: transparent;
+}
+
+.article-item-right p{
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: transparent;
+}
+
+.article-item-right li::marker{
+  text-align: left;
+  background-color: transparent;
+  color: white;
+}
+
+.icon-mental{
+  background-color: transparent;
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.consul-payment {
+  width: 80%;
+  margin: 75px 100px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.consul-payment-content{
+  border-radius: 20px;
+  margin: auto;
+}
+
+.consul-payment-title{
+  color: white;
+  background-image: linear-gradient(#545DF3, #2135E3);
+  text-align: center;
+  padding: 100px;
+  border-radius: 30px;
+}
+.consul-payment-title h1{
+  background-color: transparent;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
+.pricing-table{
+  margin-top: -100px;
+  display: flex;
+  justify-content: space-around;
+  width: min(1920px,100%);
+  background-color: transparent;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 360px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 20px 10px;
+  text-align: center;
+  overflow: hidden;
+  color: black;
+  transition: .3s linear;
+  border-radius: 20px;
+   
+}
+
+.pricing-card-header{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  text-align: right;
+  display: inline-block;
+  color: black;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.blue-text {
+  margin-left: 60px;
+  padding: 20px 10px;
+  text-align: right;
+  background-color: white;
+  color: #2135E3;
+}
+
+.duration-lenght {
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  margin-left: 20px;
+  background-color: #2135E3;
+  color: white;
+}
+
+.session {
+  float: left;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #2135E3;
+  color: white;
+}
+
+.row-price {
+  background-color: white;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.price sup, .price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card li {
+  font-size: 16px;
+  background-color: white;
+}
+
+.pricing-card-duration {
+  display: inline-block;
+  text-align: right;
+  margin: 20px;
+  border: 2px solid #1F1F35;
+  color: white;
+  background-color: #2135E3;
+  padding: 25px 50px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border: 2px solid #1F1F35;
+  color: white;
+  background-color: #2135E3;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn:hover {
+  background-color: white;
+  color: #2135E3;
+}
+
+.popup-overlay {
+  background-color: transparent;
+}
+
+.modal {
+  font-size: 12px;
+  background-color: transparent;
+  height: 350px;
+  width: 500px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgb(0 42 177 / 10%);
+}
+
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  background: transparent;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+  background: transparent;
+}
+.modal > .actions {
+  margin: auto;
+  background: transparent;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  background: transparent;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: red;
+  border-radius: 18px;
+}

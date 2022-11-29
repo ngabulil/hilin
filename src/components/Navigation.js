@@ -17,7 +17,7 @@ export class Navigation extends Component {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/article'>Article</Link></li>
                     <li><Link to='/mentaltest'>Mental Test</Link></li>
-                    <li><Link to='/konsultasi'>Konsultasi</Link></li>
+                    <li><Link to='/consultation'>Konsultasi</Link></li>
                 </ul>
             </div>
             <div className='login'>

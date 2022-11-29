@@ -90,7 +90,7 @@ nav .menu ul li a:hover {
 .hero-login img {
     width: 535px;
     height: 550px;
-}
+}                                         
 
 form {
     background-color: var(--white-color);
@@ -478,7 +478,7 @@ button:hover {
 /* Article */
 .article-main-container {
     width: 80%;
-    margin: auto;
+    margin: 25px 68px;
     margin-bottom: 80px;
 }
 
