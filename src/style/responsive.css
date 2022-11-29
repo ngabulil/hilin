@@ -54,9 +54,7 @@
         top: 61px;
         left: 0;
         right: 0;
-        z-index: 100;
     }
-
     /* end navbar */
 
     /* container 1 */
@@ -429,7 +427,6 @@
         top: 61px;
         left: 0;
         right: 0;
-        z-index: 100;
     }
 
     /* end navbar */
@@ -671,7 +668,6 @@
         top: 61px;
         left: 0;
         right: 0;
-        z-index: 100;
     }
 
     /* end navbar */
@@ -949,7 +945,6 @@
         top: 61px;
         left: 0;
         right: 0;
-        z-index: 100;
     }
 
     nav .menu ul li a {

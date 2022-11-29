@@ -1,15 +1,19 @@
-import { useState, React } from "react";
+import { useState, React, useRef } from "react";
 import "../style/style.css";
 import Logo from "../assets/Logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../config/AuthContext";
-import {GiHamburgerMenu} from "react-icons/gi"
-import {FaTimes} from "react-icons/fa"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
+import usser from "../assets/usser.png";
 
 const Navigation = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
+  const [open, setOpen] = useState(false);
+  const menu = useRef();
+  const profile = useRef();
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -24,11 +28,17 @@ const Navigation = () => {
     }
   };
 
+  window.addEventListener("click", (e) => {
+    if (e.target !== menu.current && e.target !== profile.current) {
+      setOpen(false);
+    }
+  });
+
   return (
     <div>
       <nav className={toggle ? "navbar expanded" : "navbar"}>
         <div className="hamburger" onClick={handleToggle}>
-          {toggle?<FaTimes></FaTimes>:<GiHamburgerMenu></GiHamburgerMenu>}
+          {toggle ? <FaTimes></FaTimes> : <GiHamburgerMenu></GiHamburgerMenu>}
         </div>
         <Link to="/">
           <div className="logo">
@@ -52,10 +62,22 @@ const Navigation = () => {
           </ul>
         </div>
         {user?.email ? (
-          <div className="login">
-            <button onClick={handleLogout} className="btn-login">
-              Logout
-            </button>
+          <div className="logout-container">
+            <img
+              src={usser}
+              alt="hah"
+              className="usser"
+              ref={profile}
+              onClick={() => setOpen(!open)}
+            ></img>
+            {open && (
+              <div ref={menu} className="dropdown">
+                <ul>
+                  <li>Profile</li>
+                  <li className='li-logout' onClick={handleLogout}>Logout</li>
+                </ul>
+              </div>
+            )}
           </div>
         ) : (
           <div className="login">

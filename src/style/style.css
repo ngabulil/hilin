@@ -619,3 +619,43 @@ button:hover {
     transform: -moz-translate(-50%, -50%);
     transform: -ms-translate(-50%, -50%);
 }
+
+.usser {
+    width: 44px;
+}
+
+.dropdown {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px blue);
+}
+
+.dropdown ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li {
+    padding: 10px;
+}
+
+.dropdown ul .li-logout {
+    color: red;
+}
+
+.dropdown ul .li-logout:hover {
+    color: var(--white-color);
+    background-color: red;
+    border-radius: 20px;
+}
+
+.dropdown ul li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-container {
+    max-height: 44px;
+}
