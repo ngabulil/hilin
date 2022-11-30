@@ -349,9 +349,9 @@
     .consul-payment-content {
         width: 100%;
     }
-    .consul-payment-title h1 {
-        /* margin: 75px 100px 0; */
-    }
+    /*.consul-payment-title h1 {
+        margin: 75px 100px 0; 
+    }*/
     .consul-payment-title {
         width: 100%;
         /* min-width: 790px; */
@@ -414,9 +414,9 @@
     .consul-payment-content {
         width: 100%;
     }
-    .consul-payment-title h1 {
-        /* margin: 75px 100px 0; */
-    }
+    /*.consul-payment-title h1 {
+        margin: 75px 100px 0; 
+    }*/
     .consul-payment-title {
         width: 100%;
         /* min-width: 790px; */
