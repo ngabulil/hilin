@@ -18,7 +18,7 @@ export default function ConsulMain() {
         </ul>
       </div>
       <div className="article-item-right">
-        <img className="icon-mental" src={IconMental} />
+        <img className="icon-mental" src={IconMental} alt='hehe'/>
         <p>Masalah yang sering ditangani termasuk :</p>
         <ul>
           <li>Overthinking & Kecemasan Berlebih</li>
