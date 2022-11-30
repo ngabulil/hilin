@@ -1,0 +1,431 @@
+@media only screen and (max-width: 400px) and (min-width: 250px) {
+    .consul-header {
+        width: auto;
+        margin: 20px 14px 80px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .header-image-mob {
+        display: flex;
+    }
+
+    .header-image-mob img {
+        min-width: 250px;
+        max-width: 400px;
+    }
+
+    .consul-description p {
+        text-align: justify;
+    }
+
+    .consul-main {
+        /* display: none; */
+        width: auto;
+        margin: 20px 14px 80px;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .article-item-left {
+        margin-top: 30px;
+    }
+
+    .article-item-left p {
+        margin-left: 0;
+    }
+
+    .article-item-left ul {
+        margin-left: 20px;
+    }
+
+    .article-item-right {
+        margin-top: 120px;
+        margin-bottom: 30px;
+        padding: 0px 20px 40px;
+    }
+
+    .article-item-right ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .article-item-right p {
+        padding: 0 10px;
+    }
+
+    .icon-mental {
+        width: 100px;
+        margin-left: -40px;
+    }
+
+    .consul-payment {
+        /* display: none; */
+        width: auto;
+        margin: 20px 5px 80px;
+    }
+
+    .consul-payment-title {
+        padding: 0 20px;
+        width: auto;
+        min-width: 250px;
+        max-width: 400px;
+    }
+
+    .consul-payment-title h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .pricing-table {
+        grid-template-columns: auto;
+        margin-top: -215px;
+        row-gap: 50px;
+    }
+
+    .pricing-card {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .consul-header {
+        width: auto;
+        margin: 20px 14px 80px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .consul-description {
+        max-width: 100%;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .header-image-mob {
+        display: flex;
+    }
+
+    .header-image-mob img {
+        min-width: 250px;
+        max-width: 600px;
+    }
+
+    .consul-description p {
+        text-align: justify;
+    }
+
+    .consul-main {
+        /* display: none; */
+        width: auto;
+        margin: 20px 14px 80px;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .article-item-left {
+        margin: 30px auto 0;
+
+    }
+
+    .article-item-left p {
+        margin-left: 0;
+    }
+
+    .article-item-left ul {
+        margin-left: 20px;
+        text-align: justify;
+    }
+
+    .article-item-right {
+        margin: 120px auto 30px;
+        padding: 0px 20px 40px;
+    }
+
+    .article-item-right ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .article-item-right p {
+        padding: 0 10px;
+    }
+
+    .icon-mental {
+        width: 100px;
+        margin-left: -40px;
+    }
+
+    .consul-payment {
+        /* display: none; */
+        width: auto;
+        margin: 20px 5px 80px;
+    }
+    .consul-payment-content {
+        width: 100%;
+    }
+    .consul-payment-title {
+        padding: 0 20px;
+        width: auto;
+        min-width: 400px;
+        max-width: 600px;
+    }
+
+    .consul-payment-title h1 {
+        max-width: 400px;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .pricing-table {
+        grid-template-columns: auto;
+        margin-top: -215px;
+        row-gap: 50px;
+    }
+
+    .pricing-card {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 601px) {
+    .consul-header {
+        width: auto;
+        margin: 20px 14px 80px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .consul-description {
+        max-width: 100%;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .header-image-mob {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-image-mob img {
+        min-width: 250px;
+        max-width: 600px;
+    }
+
+    .consul-description p {
+        text-align: justify;
+    }
+
+    .consul-main {
+        /* display: none; */
+        width: auto;
+        margin: 20px 14px 80px;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .article-item-left {
+        margin: 30px auto 0;
+
+    }
+
+    .article-item-left p {
+        margin-left: 0;
+    }
+
+    .article-item-left ul {
+        margin-left: 20px;
+        text-align: justify;
+    }
+
+    .article-item-right {
+        margin: 120px auto 30px;
+        padding: 0px 20px 40px;
+    }
+
+    .article-item-right ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .article-item-right p {
+        padding: 0 10px;
+    }
+
+    .icon-mental {
+        width: 100px;
+        margin-left: -40px;
+    }
+
+    .consul-payment {
+        /* display: none; */
+        width: auto;
+        margin: 20px 5px 80px;
+    }
+    .consul-payment-content {
+        width: 100%;
+    }
+    .consul-payment-title {
+        padding: 0 20px;
+        width: auto;
+        min-width: 400px;
+        max-width: 800px;
+    }
+
+    .consul-payment-title h1 {
+        max-width: 400px;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .pricing-table {
+        grid-template-columns: auto;
+        margin-top: -215px;
+        row-gap: 50px;
+    }
+
+    .pricing-card {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 767px) {
+    .consul-header {
+        width: auto;
+        margin: 50px 20px 100px;
+        column-gap: 15px;
+    }
+    .consul-description {
+        width: 50%;
+        max-width: 530px;
+    }
+
+    .consul-description p {
+        text-align: justify;
+    }
+    .header-image {
+        display: flex;
+        width: 50%;
+        min-width: 300px;
+        max-width: 600px;    
+    }
+
+    .header-image img {
+        min-width: 300px;
+    }
+    .consul-main {
+        /* display: none; */
+        width: auto;
+        margin: auto 20px;
+        padding: 75px 30px;
+        column-gap: 15px;
+    }
+    .article-item-left {
+        width: 50%;
+    }
+    .article-item-right {
+        width: 50%;
+    }
+    .article-item-left p {
+        max-width: 300px;
+    }
+    .consul-payment {
+        /* display: none; */
+        margin: 0 20px;
+        width: auto;
+        margin-top: 80px;
+    }
+    .consul-payment-content {
+        width: 100%;
+    }
+    .consul-payment-title h1 {
+        /* margin: 75px 100px 0; */
+    }
+    .consul-payment-title {
+        width: 100%;
+        /* min-width: 790px; */
+    }
+    .pricing-table {
+        grid-template-columns: auto auto;
+        row-gap: 50px;
+    }
+    .pricing-card {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+    .consul-header {
+        width: 85%;
+        margin: 40px auto 80px;
+        column-gap: 15px;
+    }
+    .consul-description {
+        width: 50%;
+        max-width: 530px;
+    }
+
+    .consul-description p {
+        text-align: justify;
+    }
+    .header-image {
+        display: flex;
+        width: 50%;
+        min-width: 300px;
+        max-width: 600px;    
+    }
+
+    .header-image img {
+        min-width: 300px;
+    }
+    .consul-main {
+        /* display: none; */
+        width: 85%;
+        margin: auto;
+        padding: 75px 30px;
+        column-gap: 15px;
+    }
+    .article-item-left {
+        width: 50%;
+    }
+    .article-item-right {
+        width: 50%;
+    }
+    .article-item-left p {
+        max-width: 300px;
+    }
+    .consul-payment {
+        /* display: none; */
+        margin: 0 40px;
+        width: auto;
+        margin-top: 80px;
+    }
+    .consul-payment-content {
+        width: 100%;
+    }
+    .consul-payment-title h1 {
+        /* margin: 75px 100px 0; */
+    }
+    .consul-payment-title {
+        width: 100%;
+        /* min-width: 790px; */
+    }
+    .pricing-table {
+        grid-template-columns: auto auto auto;
+        row-gap: 50px;
+    }
+    .pricing-card {
+        width: 330px;
+    }
+}

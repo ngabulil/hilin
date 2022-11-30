@@ -1,16 +1,33 @@
 .consul-header {
+  display: flex;
   width: 80%;
-  margin-top: 75px;
-  margin-left: 75px;
-  margin-bottom: 100px;
+  margin: 50px auto 100px;
+  justify-content: space-between;
 }
-.consul-header-content{
-  padding-left: 50px;
+
+.header-image img {
+  width: 650px;
+}
+
+.header-image-mob {
+  display: none;
+}
+
+.consul-description {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.consul-description p {
+  font-size: 24px;
 }
 
 .header-title {
-    font-size: 42px;
-    font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .desc {
@@ -24,33 +41,29 @@
 }
 
 .btn-konsultasi {
-    cursor: pointer;
-    margin-top: 50px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    width: 190px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-}
-
-.header-image img {
-  max-width: 100%;
-  margin-top: 50px; 
-  height: auto;
-  float: right;
-  display: flex;
-  width: 500px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 190px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
 }
 
 .consul-main {
+  display: flex;
   background-color: white;
   width: 80%;
   text-align: center;
-  margin: auto; 
+  margin: auto;
   margin-bottom: 80px;
+  /* border: 2px solid black; */
+  border-radius: 40px;
+  padding: 75px 90px;
+  justify-content: space-around;
+  box-shadow: 0px 0px 5px 0px rgba(33, 53, 227, 0.75);
 }
 
 .article-item {
@@ -63,138 +76,165 @@
   display: flex;
 }
 
-.article-item p{
+.article-item p {
   background-color: white;
   font-size: 20px;
   font-weight: 500;
 }
 
 .article-item-left {
-  padding-left: 30px;
+  /* padding-left: 30px;
   padding-right: 30px;
-  padding-top: 10px;
-  display: flex;
+  padding-top: 10px; */
   text-align: left;
   background-color: white;
-  margin-right: 80px;
+  max-width: 450px;
+  /* margin-right: 80px; */
 }
 
-.article-item-left p{
+.article-item-left p {
+  font-weight: 500;
+  font-size: 24px;
   margin-left: -15px;
   margin-bottom: 50px;
   background-color: transparent;
+  max-width: 350px;
 }
 
-.article-item-left li{
+.article-item-left li {
+  font-size: 20px;
   background-color: transparent;
 }
 
-.article-item-left ul{
-  padding: 30px;
+.article-item-left ul {
+  /* padding: 30px; */
   background-color: transparent;
 }
 
 .article-item-right {
-  margin-top: 45px;
+  /* margin-top: 45px; */
   background-color: var(--white-color);
-  box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 156, 255, 0.75);
-  border-top-right-radius: 100px;
+  box-shadow: 0px 5px 5px 0px rgba(130, 174, 202, 0.75);
+  border-top-right-radius: 150px;
   align-items: center;
   text-align: center;
-  margin-right: 100px;
+  /* border: 2px solid black; */
+  padding: 0 50px 60px;
+  max-width: 420px;
+  /* margin-right: 100px; */
 }
 
-.article-item-right ul{
+.article-item-right ul {
+  margin-top: 30px;
   text-align: left;
   background-color: transparent;
+  list-style: none;
+  font-size: 20px;
 }
 
-.article-item-right li{
-  margin-top: -30px;
-  padding: 40px;
+
+.article-item-right p {
+  /* padding: 0 40px 30px; */
   background-color: transparent;
+  font-size: 24px;
+  max-width: 375px;
+  font-weight: 500;
 }
 
-.article-item-right p{
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: transparent;
-}
-
-.article-item-right li::marker{
+/* .article-item-right li::marker {
   text-align: left;
   background-color: transparent;
   color: white;
-}
+} */
 
-.icon-mental{
+.icon-mental {
   background-color: transparent;
   display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: -80px;
+  margin-top: -60px;
+  width: 125px;
 }
 
 .consul-payment {
-  width: 80%;
-  margin: 75px 100px;
+  width: 90%;
+  margin: auto;
   display: flex;
   margin-bottom: 80px;
 }
 
-.consul-payment-content{
-  border-radius: 20px;
+.consul-payment-content {
   margin: auto;
 }
 
-.consul-payment-title{
+.consul-payment-title {
+  display: flex;
+  justify-content: center;
   color: white;
   background-image: linear-gradient(#545DF3, #2135E3);
   text-align: center;
-  padding: 100px;
-  border-radius: 30px;
-}
-.consul-payment-title h1{
-  background-color: transparent;
-  margin-top: -50px;
-  margin-bottom: 10px;
+  border-radius: 80px;
+  width: 1375px;
+  height: 400px;
 }
 
-.pricing-table{
-  margin-top: -100px;
-  display: flex;
-  justify-content: space-around;
-  width: min(1920px,100%);
+.consul-payment-title h1 {
+  font-size: 38px;
+  background-color: transparent;
+  margin-top: 75px;
+}
+
+.pricing-table {
+  margin-top: -200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 45px;
   background-color: transparent;
 }
 
-.pricing-card{
-  flex: 1;
-  max-width: 360px;
-  border: 1px solid black;
+.pricing-card {
+  padding: 15px;
+  width: 370px;
   background-color: white;
-  margin: 20px 10px;
   text-align: center;
   overflow: hidden;
   color: black;
   transition: .3s linear;
-  border-radius: 20px;
-   
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
 }
 
-.pricing-card-header{
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+.pricing-card-header {
   background-color: white;
   text-align: right;
   display: inline-block;
   color: black;
-  padding: 5px;
   font-size: 16px;
   font-weight: 600;
   transition: .4s linear;
+}
+
+.pricing-card-list {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.price-time {
+  display: flex;
+  padding: 20px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 40px;
+  justify-content: space-around;
+  align-items: center;
+  height: 105px;
+}
+
+.p-price {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .blue-text {
@@ -224,20 +264,35 @@
 }
 
 .row-price {
-  background-color: white;
-  content: "";
+  /* background-color: white; */
+  /* content: "";
   display: table;
-  clear: both;
+  clear: both; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.price sup, .price span {
+.row-price p {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.row-price .p-premium {
+  color: black;
+}
+
+.price sup,
+.price span {
   font-size: 22px;
   font-weight: 700;
 }
 
 .pricing-card li {
-  font-size: 16px;
-  background-color: white;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .pricing-card-duration {
@@ -255,17 +310,19 @@
 
 .order-btn {
   cursor: pointer;
-  display: inline-block;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  border: 2px solid #1F1F35;
+  margin: auto;
+  /* display: flex; */
+  font-size: 20px;
+  border: none;
   color: white;
   background-color: #2135E3;
-  padding: 18px 40px;
-  border-radius: 8px;
+  border-radius: 15px;
   text-transform: uppercase;
   font-weight: 500;
   transition: .3s linear;
+  margin-top: 50px;
+  width: 225px;
+  height: 70px;
 }
 
 .order-btn:hover {
@@ -290,7 +347,7 @@
   box-shadow: 0 10px 10px rgb(0 42 177 / 10%);
 }
 
-.modal > .header {
+.modal>.header {
   width: 100%;
   border-bottom: 1px solid gray;
   font-size: 18px;
@@ -298,22 +355,26 @@
   padding: 5px;
   background: transparent;
 }
-.modal > .content {
+
+.modal>.content {
   width: 100%;
   padding: 10px 5px;
   background: transparent;
 }
-.modal > .actions {
+
+.modal>.actions {
   margin: auto;
   background: transparent;
 }
-.modal > .actions {
+
+.modal>.actions {
   width: 100%;
   padding: 10px 5px;
   text-align: center;
   background: transparent;
 }
-.modal > .close {
+
+.modal>.close {
   cursor: pointer;
   position: absolute;
   color: white;
