@@ -22,7 +22,6 @@ function App() {
         <Route path="/mentaltest/start" element={<MentalTestPage />} />
         <Route path="/mentaltest/result" element={<MentalTestResultPage />} />
         <Route path="/konsultasi" element={<ConsultationPage />} />
-        
       </Routes>
     </AuthContextProvider>
 
