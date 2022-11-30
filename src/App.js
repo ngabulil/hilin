@@ -8,6 +8,7 @@ import MentalTestHomePage from './pages/MentalTestHomePage';
 import MentalTestPage from './pages/MentalTestPage';
 import MentalTestResultPage from './pages/MentalTestResultPage';
 import { AuthContextProvider } from './config/AuthContext';
+import ConsultationPage from './pages/ConsultationPage';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/mentaltest" element={<MentalTestHomePage />} />
         <Route path="/mentaltest/start" element={<MentalTestPage />} />
         <Route path="/mentaltest/result" element={<MentalTestResultPage />} />
+        <Route path="/konsultasi" element={<ConsultationPage />} />
+        
       </Routes>
     </AuthContextProvider>
 
