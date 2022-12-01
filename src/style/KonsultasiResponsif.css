@@ -349,9 +349,6 @@
     .consul-payment-content {
         width: 100%;
     }
-    .consul-payment-title h1 {
-        /* margin: 75px 100px 0; */
-    }
     .consul-payment-title {
         width: 100%;
         /* min-width: 790px; */
@@ -368,7 +365,7 @@
 @media only screen and (max-width: 1440px) and (min-width: 1201px) {
     .consul-header {
         width: 85%;
-        margin: 40px auto 80px;
+        margin: 50px auto 80px;
         column-gap: 15px;
     }
     .consul-description {
@@ -390,9 +387,8 @@
         min-width: 300px;
     }
     .consul-main {
-        /* display: none; */
         width: 85%;
-        margin: auto;
+        margin: 50px auto 80px;
         padding: 75px 30px;
         column-gap: 15px;
     }
@@ -406,16 +402,10 @@
         max-width: 300px;
     }
     .consul-payment {
-        /* display: none; */
-        margin: 0 40px;
-        width: auto;
         margin-top: 80px;
     }
     .consul-payment-content {
         width: 100%;
-    }
-    .consul-payment-title h1 {
-        /* margin: 75px 100px 0; */
     }
     .consul-payment-title {
         width: 100%;

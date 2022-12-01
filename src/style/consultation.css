@@ -57,7 +57,7 @@
   background-color: white;
   width: 80%;
   text-align: center;
-  margin: auto;
+  margin: 50px auto 100px;
   margin-bottom: 80px;
   /* border: 2px solid black; */
   border-radius: 40px;
@@ -157,7 +157,7 @@
 
 .consul-payment {
   width: 90%;
-  margin: auto;
+  margin: 90px 45px;
   display: flex;
   margin-bottom: 80px;
 }

@@ -6,9 +6,9 @@ export default class ConsulHeader extends Component {
   render() {
     return (
       <div className="consul-header">
-        <div className="consul-description">
+        <div className="consul-description" data-aos="fade-right" data-aos-duration="1500">
           <h1 className="header-title">Konsultasi dengan Mentor</h1>
-          <div className="header-image-mob">
+          <div className="header-image-mob" >
             <img src={bgImage} alt="bgImage"></img>
           </div>
           <p>
@@ -19,7 +19,7 @@ export default class ConsulHeader extends Component {
             Daftar
           </button>
         </div>
-        <div className="header-image">
+        <div className="header-image" data-aos="fade-left" data-aos-duration="1500">
           <img src={bgImage} alt="bgImage"></img>
         </div>
       </div>

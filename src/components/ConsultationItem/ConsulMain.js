@@ -4,7 +4,7 @@ import IconMental from "../../assets/icon mental.png";
 
 export default function ConsulMain() {
   return (
-    <div className="consul-main">
+    <div className="consul-main" data-aos="fade-up" data-aos-duration="2000">
       <div className="article-item-left">
         <p>Konsultasi sama mentor tuh ngapain sih?</p>
         <ul>

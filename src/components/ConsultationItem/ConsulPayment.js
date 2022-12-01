@@ -5,13 +5,13 @@ import "../../style/consultation.css";
 
 export default function ConsulPayment() {
   return (
-    <div className="consul-payment">
+    <div className="consul-payment" data-aos="fade-up" data-aos-duration="2000">
       <div className="consul-payment-content">
         <div className="consul-payment-title">
           <h1>Paket Konsultasi Dengan Mentor</h1>
         </div>
         <div className="pricing-table">
-          <div className="pricing-card">
+          <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
               <p className="p-premium">Paket Premium</p>
               <p>200K</p>
@@ -37,7 +37,7 @@ export default function ConsulPayment() {
               {(close) => <Payment1 close={close} />}
             </Popup>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
               <p className="p-premium">Paket Premium</p>
               <p>200K</p>
@@ -63,7 +63,7 @@ export default function ConsulPayment() {
               {(close) => <Payment2 close={close} />}
             </Popup>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
               <p className="p-premium">Paket Premium</p>
               <p>200K</p>
