@@ -345,6 +345,7 @@
         margin: 0 20px;
         width: auto;
         margin-top: 80px;
+        margin-bottom: 80px;
     }
     .consul-payment-content {
         width: 100%;
@@ -356,6 +357,9 @@
     .pricing-table {
         grid-template-columns: auto auto;
         row-gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .pricing-card {
         width: 330px;
