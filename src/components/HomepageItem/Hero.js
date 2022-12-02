@@ -11,8 +11,8 @@ export default function HeaderHomepage1() {
       <div className='container-1'>
         <div className='hero-title' data-aos="fade-right" data-aos-duration="1500">
           <div className='header-3'>
-            <h1>Jaga Kesehan Mentalmu Dari Sekarang!</h1>
-            <p>Health.in platform Free Mental Check Up menyediakan Layanan tes kesehatan mental, Menyedian Article untuk mengurasi rasa stress, dan menyediakan fitur konsultasi bersama Mentor Profesional.</p>
+            <h1>Jaga Kesehatan Mental Anda Sekarang!</h1>
+            <p>Platform Mental Check Up gratis dari <b>Health.in</b> menawarkan tes kesehatan mental, menyediakan beberapa artikel untuk mengurangi rasa stres, dan kegiatan konseling dengan mentor profesional.</p>
           </div>
           <div className='btn-started-wrap'>
             <ButtonMore />
