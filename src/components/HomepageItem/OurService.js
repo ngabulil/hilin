@@ -7,6 +7,7 @@ import Button from '../Button';
 import ArticleImg from '../../assets/article.png';
 import MentalDetailIcon from '../../assets/mental test.png';
 import Konsultasi from '../../assets/konsultasi.png';
+import { Link } from 'react-router-dom';
 
 export default function HeaderHomepage2() {
   return (
@@ -16,17 +17,17 @@ export default function HeaderHomepage2() {
         <ServiceItem
           icon={IconArticle}
           title="Article"
-          description="Toko tempat meramu dan menjual obat berdasarkan resep dokter serta memperdagangkan barang medis"
+          description="berisi beberapa artikel tentang kegiatan yang ditujukan untuk mengurangi stres"
         />
         <ServiceItem
           icon={IconMental}
-          title="Mental"
-          description="Toko tempat meramu dan menjual obat berdasarkan resep dokter serta memperdagangkan barang medis"
+          title="Mental Test"
+          description="Tes kesehatan mental untuk mengukur seberapa banyak stres yang anda alami saat ini"
         />
         <ServiceItem
           icon={IconKonsultasi}
           title="Konsultasi"
-          description="Toko tempat meramu dan menjual obat berdasarkan resep dokter serta memperdagangkan barang medis"
+          description="Konsultasi dengan mentor profesional untuk refleksi diri dan mengurangi stres yang anda hadapi"
         />
       </div>
       <div className="container-3">
@@ -37,10 +38,10 @@ export default function HeaderHomepage2() {
           <div className="article-detail-content">
             <h1>Article</h1>
             <div className="article-detail-img-1">
-            <img src={ArticleImg} alt="Article Icon" />
-          </div>
-            <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
-            <Button name="Mulai" />
+              <img src={ArticleImg} alt="Article Icon" />
+            </div>
+            <p>Artikel ini berisi artikel terbaru dan terpopuler yang menawarkan macam-macam solusi yang berbeda untuk mengurangi rasa stres dan berbagai cara untuk melakukan aktivitas untuk menghilangkan stres.</p>
+            <Link to='/article'><Button name="Mulai" /></Link>
           </div>
         </div>
         <div className="article-detail-mob" data-aos="fade-left" data-aos-duration="1500">
@@ -50,17 +51,17 @@ export default function HeaderHomepage2() {
           <div className="article-detail-content">
             <h1>Mental Test</h1>
             <div className="article-detail-img-1">
-            <img src={MentalDetailIcon} alt="Article Icon" />
-          </div>
-            <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
-            <Button name="Mulai" />
+              <img src={MentalDetailIcon} alt="Article Icon" />
+            </div>
+            <p>Tes Kesehatan Mental yang memungkinkan Anda mengukur seberapa besar stres yang Anda alami saat ini dengan menjawab survei yang telah kami sediakan.</p>
+            <Link to='/mentaltest'><Button name="Mulai Tes" /></Link>
           </div>
         </div>
         <div className="mentaltest-detail" data-aos="fade-left" data-aos-duration="1500">
           <div className="mentaltest-detail-content">
             <h1>Mental Test</h1>
-            <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
-            <Button name="Mulai Tes" />
+            <p>Tes Kesehatan Mental yang memungkinkan Anda mengukur seberapa besar stres yang Anda alami saat ini dengan menjawab survei yang telah kami sediakan.</p>
+            <Link to='/mentaltest'><Button name="Mulai Tes" /></Link>
           </div>
           <div className="mentaltest-detail-img">
             <img src={MentalDetailIcon} alt="Article Icon" />
@@ -73,10 +74,11 @@ export default function HeaderHomepage2() {
           <div className="article-detail-content">
             <h1>Konsultasi</h1>
             <div className="article-detail-img-1">
-            <img src={Konsultasi} alt="Article Icon" />
-          </div>
-            <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
-            <Button name="Daftar Sekarang" />
+              <img src={Konsultasi} alt="Article Icon" />
+            </div>
+            <p>Solusi terbaik untuk mengembalikan senyum bahagia Anda
+              Butuh tempat yang aman dan nyaman untuk bercerita? Psikolog profesional siap membantu Anda dengan berbagai masalah Anda. Cepat, akurat dan ramah.</p>
+            <Link to='/konsultasi'><Button name="Daftar Sekarang" /></Link>
           </div>
         </div>
       </div>
