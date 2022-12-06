@@ -76,11 +76,11 @@
   display: flex;
 }
 
-.article-item p {
+/* .article-item p {
   background-color: white;
   font-size: 20px;
   font-weight: 500;
-}
+} */
 
 .article-item-left {
   /* padding-left: 30px;
@@ -157,9 +157,8 @@
 
 .consul-payment {
   width: 90%;
-  margin: 90px 45px;
+  margin: 90px auto;
   display: flex;
-  margin-bottom: 80px;
 }
 
 .consul-payment-content {
@@ -317,7 +316,6 @@
   color: white;
   background-color: #2135E3;
   border-radius: 15px;
-  text-transform: uppercase;
   font-weight: 500;
   transition: .3s linear;
   margin-top: 50px;
@@ -326,8 +324,7 @@
 }
 
 .order-btn:hover {
-  background-color: white;
-  color: #2135E3;
+  opacity: 0.7;
 }
 
 .popup-overlay {

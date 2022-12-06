@@ -14,9 +14,11 @@ export default class ConsulHeader extends Component {
           <p>
             Apakah Anda memiliki masalah kecemasan? Berpikir terlalu banyak? Sulit mengatur emosi dan tidak terlalu mengenal satu sama lain? Konsultasikan dengan kami!
           </p>
-          <button className="btn-konsultasi" type="submit">
+          <a href="#consulpayment">
+          <button className="btn-konsultasi">
             Pilih Paket Sekarang!
           </button>
+          </a>
         </div>
         <div className="header-image" data-aos="fade-left" data-aos-duration="1500">
           <img src={bgImage} alt="bgImage"></img>
