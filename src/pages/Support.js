@@ -22,7 +22,7 @@ const SupportPage = () => {
         e.preventDefault()
 
         if (!user || !formValue) return
-        const payload = { text: formValue, createdAt: serverTimestamp(), uid: user.uid, displayName: user.displayName }
+        const payload = { text: formValue, createdAt: serverTimestamp(), uid: user.uid}
         await addDoc(messageRef, payload)
 
         setFormValue('')
@@ -49,7 +49,7 @@ const SupportPage = () => {
 function ChatMessage(props) {
     if (!auth.currentUser) return
 
-    const { text, uid, displayName } = props.message
+    const { text, uid } = props.message
 
     const className = uid === auth.currentUser.uid ? "sent" : "received"
     return (
@@ -59,7 +59,6 @@ function ChatMessage(props) {
               <p>anonymous</p>
             </div>
             <p>{text}</p>
-            {/* <p>{displayName}</p> */}
         </div>
     )
 }
