@@ -58,10 +58,10 @@ const Navigation = () => {
               <Link to="/article">Article</Link>
             </li>
             <li>
-              <Link to="/mentaltest">Mental Test</Link>
+              <Link to="/mentaltest">Mental test</Link>
             </li>
             <li>
-              <Link to="/konsultasi">Konsultasi</Link>
+              <Link to="/konsultasi">Consultation</Link>
             </li>
           </ul>
         </div>

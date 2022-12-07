@@ -26,7 +26,7 @@ export default function HeaderHomepage2() {
         />
         <ServiceItem
           icon={IconKonsultasi}
-          title="Konsultasi"
+          title="Consultation"
           description="Konsultasi dengan mentor profesional untuk refleksi diri dan mengurangi stres yang anda hadapi"
         />
       </div>
@@ -72,7 +72,7 @@ export default function HeaderHomepage2() {
             <img src={Konsultasi} alt="Article Icon" />
           </div>
           <div className="article-detail-content">
-            <h1>Konsultasi</h1>
+            <h1>Consultation</h1>
             <div className="article-detail-img-1">
               <img src={Konsultasi} alt="Article Icon" />
             </div>

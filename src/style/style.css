@@ -307,6 +307,7 @@ button:hover {
 .mentaltest-detail-content h1,
 .mentaltest-detail-content p {
     margin-bottom: 24px;
+    text-align: justify;
 }
 
 .article-detail-content p {
@@ -352,7 +353,7 @@ button:hover {
     font-weight: 600;
     color: var(--black-color);
     background-color: var(--bg-color);
-    border-radius: 50px;
+    border-radius: 20px;
     border: none;
     margin-top: 10px;
 }
@@ -742,85 +743,35 @@ button:hover {
     opacity: 0.7;
 }
 
-/* .todo {
-    padding: 14px;
+.live-chat {
+
+    padding: 20px 50px;
+    background: white;
+    min-height: 100vh;
 }
 
-.todo_container {
-    width: 80%;
-    margin: 30px auto 110px;
-    background-color: var(--white-color);
-    padding: 20px;
-    border-radius: 20px;
+.live {
+    margin-bottom: 80px;
 }
 
-.todo input {
-    width: 100%;
-    font-size: 20px;
-    background-color: var(--white-color);
-    padding: 0 5px;
-    margin: -19px 0 0;
-}
-
-.todo div {
-    display: flex;
-    justify-content: end;
-}
-
-.button-edit {
-    color: green;
-    font-size: 44px;
-    border: none;
-    background-color: transparent;
-    display: flex;
-    cursor: pointer;
-}
-
-.button-delete {
-    color: red;
-    font-size: 44px;
-    border: none;
-    background-color: transparent;
-    display: flex;
-    cursor: pointer;
-}
-
-
-.todo-header {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    margin-top: 20px;
-}
-
-.todo-header h1 {
-    text-align: center;
-    font-size: 38px;
-}
-
-.todo-header :nth-child(2) {
-    width: 50%;
-    margin: auto;
-    font-size: 20px;
+.live-chat-desk {
+    width:100%;
+    margin: 0 auto;
     text-align: center;
 }
-
-.todo-header :nth-child(3) {
-    width: 50%;
-    margin: auto;
-    font-style: italic;
-} */
 
 .anonim {
+    column-gap: 10px;
     display: flex;
     align-items: center;
 }
 
 .anonim img {
-    width: 70px;
+    width: 40px;
 }
 
 .anonim p {
+    padding: 6px;
     font-size: 18px;
 } 
 
@@ -832,16 +783,16 @@ button:hover {
     padding: 10px;
     border-radius: 0;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: 20px;
     align-items: center;
-    margin: 0;
+    height: 60px;
 }
 
 .form-chat input {
     width: 95%;
-    margin: 5px;
+    margin: 2px;
     min-height: 50px;
-    border-radius: 20px;
+    border-radius: 14px;
     font-size: 22px;
     padding: 0 20px;
 }
@@ -867,20 +818,14 @@ button:hover {
     margin: 10px;
 }
 
-.sent p {
-    border: 2px solid black;
-    padding: 5px;
-    max-width: 50%;
-    overflow: hidden;
-}
-
 .sent .anonim {
     flex-direction: row-reverse;
 }
 
 .sent .anonim p {
-    max-width: 100%;
-    border: none;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    filter: drop-shadow(1px 2px 1px var(--primary-color));
 }
 
 .received {
@@ -891,17 +836,14 @@ button:hover {
 }
 
 .received p {
-    border: 2px solid black;
-    padding: 5px;   
+    padding: 6px;   
     max-width: 50%;
     overflow: hidden;
     width: fit-content;
 }
 
 .received .anonim p {
-    border: none;
-}
-
-.live-chat {
-    margin-bottom: 90px;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    filter: drop-shadow(1px 2px 1px var(--primary-color));
 }

@@ -7,7 +7,7 @@ export default class ConsulHeader extends Component {
     return (
       <div className="consul-header">
         <div className="consul-description" data-aos="fade-right" data-aos-duration="1500">
-          <h1 className="header-title">Konsultasi dengan Mentor</h1>
+          <h1 className="header-title">Konsultasi Dengan Mentor</h1>
           <div className="header-image-mob" >
             <img src={bgImage} alt="bgImage"></img>
           </div>

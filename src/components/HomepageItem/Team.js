@@ -8,7 +8,7 @@ export default function HeaderHomepage4() {
     <div className='container-4'>
       <div className='content-pelayanan' data-aos="fade-up" data-aos-duration="1500">
         <div className='content-pelayanan-isi'>
-          <h1>Fitur Live Chat</h1>
+          <h1>Live Chat</h1>
           <p>Berikan dukunganmu lewat komentar untuk saling memberikan support
           kepada orang lain yang sedang mengakses website ini. Diharapkan dengan
           adanya fitur ini dapat memberi motivasi dan semangat kepada sesama

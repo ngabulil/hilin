@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import Navigation from '../components/Navigation';
 import { useAuthState } from 'react-firebase-hooks/auth'
@@ -22,7 +21,7 @@ const SupportPage = () => {
         e.preventDefault()
 
         if (!user || !formValue) return
-        const payload = { text: formValue, createdAt: serverTimestamp(), uid: user.uid}
+        const payload = { text: formValue, createdAt: serverTimestamp(), uid: user.uid }
         await addDoc(messageRef, payload)
 
         setFormValue('')
@@ -33,15 +32,22 @@ const SupportPage = () => {
     return (
         <div>
             <Navigation />
-            <h1>Live Chat</h1>
             <div className="live-chat">
-                {messages && messages.docs.map(msg => <ChatMessage key={msg.id} message={msg.data()} />)}
+                <div className="live-chat-desk">
+                    <h1>Live Chat</h1>
+                    <p>Berikan dukungan positif kepada teman yang lain!</p>
+                    <br />
+                    <hr />
+                </div>
+                <div className="live">
+                    {messages && messages.docs.map(msg => <ChatMessage key={msg.id} message={msg.data()} />)}
+                </div>
+
             </div>
             <form className='form-chat'>
                 <input placeholder='Masukkan Pesan ...' value={formValue} onChange={(e) => setFormValue(e.target.value)} />
                 <button onClick={(e) => sendMessage(e)}><BsFillArrowRightSquareFill /></button>
             </form>
-
         </div>
     )
 }
@@ -54,11 +60,11 @@ function ChatMessage(props) {
     const className = uid === auth.currentUser.uid ? "sent" : "received"
     return (
         <div className={className}>
-            <div className="anonim"> 
-              <img src={anonim} alt="anonim" />
-              <p>anonymous</p>
+            <div className="anonim">
+                <img src={anonim} alt="anonim" />
+                <p>{text}</p>
+
             </div>
-            <p>{text}</p>
         </div>
     )
 }
