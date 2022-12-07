@@ -5,30 +5,30 @@ import "../../style/consultation.css";
 
 export default function ConsulPayment() {
   return (
-    <div className="consul-payment">
+    <div className="consul-payment" data-aos="fade-up" data-aos-duration="2000">
       <div className="consul-payment-content">
         <div className="consul-payment-title">
           <h1>Paket Konsultasi Dengan Mentor</h1>
         </div>
         <div className="pricing-table">
-          <div className="pricing-card">
+          <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
               <p className="p-premium">Paket Premium</p>
-              <p>200K</p>
+              <p>150K</p>
             </div>
             <div className="price-time">
               <p className="p-price">1 Sesi</p>
               <div className="price-time-item">
-                <p>90 Menit</p>
+                <p>60 Menit</p>
                 <p>Konsultasi</p>
               </div>
             </div>
             <ul className="pricing-card-list">
-              <li>Catatan Konsultasi</li>
-              <li>Hasil Psikotest</li>
-              <li>Tes Kesehatan Mental</li>
-              <li>Tes Kepribadian</li>
-              <li>Test Minat Karir</li>
+              <li>Catatan Penasehat</li>
+              <li>Hasil tes psikologi</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
             </ul>
             <Popup
               modal
@@ -37,24 +37,24 @@ export default function ConsulPayment() {
               {(close) => <Payment1 close={close} />}
             </Popup>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
-              <p className="p-premium">Paket Premium</p>
+              <p className="p-premium">Paket Nyaman</p>
               <p>200K</p>
             </div>
             <div className="price-time">
-              <p className="p-price">1 Sesi</p>
+              <p className="p-price">2 Sesi</p>
               <div className="price-time-item">
-                <p>90 Menit</p>
+                <p>60 Menit</p>
                 <p>Konsultasi</p>
               </div>
             </div>
             <ul className="pricing-card-list">
-              <li>Catatan Konsultasi</li>
-              <li>Hasil Psikotest</li>
-              <li>Tes Kesehatan Mental</li>
+              <li>Catatan Penasehat</li>
+              <li>Hasil tes psikologi</li>
+              <li>Lebih dekat dengan Konseling</li>
               <li>Tes Kepribadian</li>
-              <li>Test Minat Karir</li>
+              <li>-</li>
             </ul>
             <Popup
               modal
@@ -63,24 +63,24 @@ export default function ConsulPayment() {
               {(close) => <Payment2 close={close} />}
             </Popup>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
-              <p className="p-premium">Paket Premium</p>
-              <p>200K</p>
+              <p className="p-premium">Paket Bahagia</p>
+              <p>250K</p>
             </div>
             <div className="price-time">
-              <p className="p-price">1 Sesi</p>
+              <p className="p-price">3 Sesi</p>
               <div className="price-time-item">
-                <p>90 Menit</p>
+                <p>60 Menit</p>
                 <p>Konsultasi</p>
               </div>
             </div>
             <ul className="pricing-card-list">
-              <li>Catatan Konsultasi</li>
-              <li>Hasil Psikotest</li>
-              <li>Tes Kesehatan Mental</li>
+              <li>Catatan Penasehat</li>
+              <li>Hasil tes psikologi</li>
+              <li>Lebih dekat dengan Konseling</li>
               <li>Tes Kepribadian</li>
-              <li>Test Minat Karir</li>
+              <li>Tes tekanan psikologis</li>
             </ul>
             <Popup
               modal

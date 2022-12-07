@@ -6,6 +6,7 @@ import { UserAuth } from "../config/AuthContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import usser from "../assets/usser.png";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Navigation = () => {
   const { user, logOut } = UserAuth();
@@ -22,6 +23,10 @@ const Navigation = () => {
   const handleLogout = async () => {
     try {
       await logOut();
+      window.sessionStorage.clear();
+      toast.success("Logout Success !", {
+        autoClose: 2000
+      })
       navigate("/");
     } catch (error) {
       console.log(error);
@@ -87,6 +92,7 @@ const Navigation = () => {
           </div>
         )}
       </nav>
+      <ToastContainer />
     </div>
   );
 };

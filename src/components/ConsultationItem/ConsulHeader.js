@@ -6,20 +6,19 @@ export default class ConsulHeader extends Component {
   render() {
     return (
       <div className="consul-header">
-        <div className="consul-description">
+        <div className="consul-description" data-aos="fade-right" data-aos-duration="1500">
           <h1 className="header-title">Konsultasi dengan Mentor</h1>
-          <div className="header-image-mob">
+          <div className="header-image-mob" >
             <img src={bgImage} alt="bgImage"></img>
           </div>
           <p>
-            Punya Masalah Kecemasan? Overthinking? Sulit Mengelola Emosi & Belum
-            Mengenal Jati Diri? Konsultasiin aja bersama Satu Persen!
+            Apakah Anda memiliki masalah kecemasan? Berpikir terlalu banyak? Sulit mengatur emosi dan tidak terlalu mengenal satu sama lain? Konsultasikan dengan kami!
           </p>
           <button className="btn-konsultasi" type="submit">
-            Daftar
+            Pilih Paket Sekarang!
           </button>
         </div>
-        <div className="header-image">
+        <div className="header-image" data-aos="fade-left" data-aos-duration="1500">
           <img src={bgImage} alt="bgImage"></img>
         </div>
       </div>
