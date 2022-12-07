@@ -21,7 +21,7 @@
 }
 
 .consul-description p {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .header-title {
@@ -47,7 +47,7 @@
   width: 190px;
   height: 60px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
 }
@@ -57,7 +57,7 @@
   background-color: white;
   width: 80%;
   text-align: center;
-  margin: auto;
+  margin: 50px auto 100px;
   margin-bottom: 80px;
   /* border: 2px solid black; */
   border-radius: 40px;
@@ -114,7 +114,7 @@
 .article-item-right {
   /* margin-top: 45px; */
   background-color: var(--white-color);
-  box-shadow: 5px 5px 5px 5px rgba(130, 174, 202, 0.75);
+  box-shadow: 0px 5px 5px 0px rgba(130, 174, 202, 0.75);
   border-top-right-radius: 150px;
   align-items: center;
   text-align: center;
@@ -157,7 +157,7 @@
 
 .consul-payment {
   width: 90%;
-  margin: auto;
+  margin: 90px 45px;
   display: flex;
   margin-bottom: 80px;
 }
@@ -308,6 +308,12 @@
   transition: .3s linear;
 }
 
+.price-info {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 50px;
+  font-size: 25px;
+}
 .order-btn {
   cursor: pointer;
   margin: auto;
@@ -325,6 +331,23 @@
   height: 70px;
 }
 
+.order-btn-payment {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #2135E3;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+  width: 225px;
+  height: 70px;
+  margin-top: -55px;
+  margin-right: 25px;
+}
+
 .order-btn:hover {
   background-color: white;
   color: #2135E3;
@@ -336,14 +359,13 @@
 
 .modal {
   font-size: 12px;
-  height: 350px;
-  width: 500px;
-  background-color: white;
+  background-color: whitesmoke;
+  height: 625px;
+  width: 1000px;
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
   align-items: center;
-  border: 2px solid black;
   border-radius: 15px;
   box-shadow: 0 10px 10px rgb(0 42 177 / 10%);
 }
@@ -351,16 +373,27 @@
 .modal>.header {
   width: 100%;
   border-bottom: 1px solid gray;
-  font-size: 18px;
+  font-size: 36px;
   text-align: center;
+  border-radius: 15px;
   padding: 5px;
-  background: transparent;
+  background: #2135E3;
+  color: white;
 }
 
 .modal>.content {
   width: 100%;
   padding: 10px 5px;
-  background: transparent;
+  background-color: transparent;
+}
+
+.modal-form {
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 0px;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .modal>.actions {
