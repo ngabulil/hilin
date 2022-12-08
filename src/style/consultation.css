@@ -220,6 +220,29 @@
   list-style: none;
 }
 
+.price-info {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.order-btn-payment {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #2135E3;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: .3s linear;
+  width: 180px;
+  height: 60px;
+  margin-top: -55px;
+  margin-right: 25px;
+}
+
 .price-time {
   display: flex;
   padding: 20px;
@@ -333,9 +356,9 @@
 
 .modal {
   font-size: 12px;
-  background-color: transparent;
-  height: 350px;
-  width: 500px;
+  background-color: whitesmoke;
+  height: 625px;
+  width: 1000px;
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -347,16 +370,27 @@
 .modal>.header {
   width: 100%;
   border-bottom: 1px solid gray;
-  font-size: 18px;
+  font-size: 36px;
   text-align: center;
+  border-radius: 15px;
   padding: 5px;
-  background: transparent;
+  background: #2135E3;
+  color: white;
 }
 
 .modal>.content {
   width: 100%;
   padding: 10px 5px;
-  background: transparent;
+  background-color: transparent;
+}
+
+.modal-form {
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 0px;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .modal>.actions {
@@ -383,4 +417,62 @@
   font-size: 24px;
   background: red;
   border-radius: 18px;
+}
+
+.detail-pesanan {
+  margin: 40px 10%;
+  background: white;
+  min-height: 550px;
+  border-radius: 20px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+
+.detail-pesanan h1 {
+  margin: 10 auto;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.detail-pesanan-saya h2 {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.menu-pesanan {
+  margin-top: 20px;
+  padding: 20px 80px;
+}
+
+.menu-pesanan p {
+  font-size: 24px;
+  padding: 5px;
+}
+
+
+.detail-harga p {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 4px;
+}
+.detail-harga {
+  border-radius: 15px;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin-top: 8% ;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  padding: 20px;
+}
+
+.detail-harga h3 {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color) ;
 }

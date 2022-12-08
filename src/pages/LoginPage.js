@@ -17,6 +17,7 @@ const LoginPage = () => {
   const handleGoogleSignIn = async () => {
     try {
       await googleSignIn();
+      sessionStorage.setItem('token',user);
     } catch (error) {
       console.log(error)
     }
@@ -74,4 +75,3 @@ const LoginPage = () => {
 }
 
 export default LoginPage
-

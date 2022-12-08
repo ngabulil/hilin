@@ -669,7 +669,9 @@ button:hover {
     filter: drop-shadow(2px 2px 2px blue);
     background-color: var(--white-color);
 }
-
+.dropdown Link ul {
+    list-style: none;
+} 
 .dropdown ul {
     list-style: none;
     display: flex;
