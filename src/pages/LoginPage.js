@@ -29,6 +29,7 @@ const LoginPage = () => {
     try {
       await logIn(email, password)
       navigate('/')
+      sessionStorage.setItem('token',logIn);
     } catch (error) {
       Swal.fire({
         icon: 'error',
