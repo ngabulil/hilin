@@ -15,6 +15,7 @@ const RegisterPage = () => {
   const handleGoogleSignIn = async () => {
     try {
       await googleSignIn();
+      sessionStorage.setItem('token',user);
     } catch (error) {
       console.log(error);
     }
@@ -25,6 +26,7 @@ const RegisterPage = () => {
     try {
       await signUp(email, password);
       navigate("/login");
+      sessionStorage.setItem('token',signUp);
     } catch (error) {
       Swal.fire({
         icon: 'error',

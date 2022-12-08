@@ -228,7 +228,6 @@
 }
 
 .order-btn-payment {
-  float: right;
   cursor: pointer;
   font-size: 20px;
   border: none;
@@ -239,8 +238,6 @@
   transition: .3s linear;
   width: 180px;
   height: 60px;
-  margin-top: -55px;
-  margin-right: 25px;
 }
 
 .price-time {
@@ -357,7 +354,7 @@
 .modal {
   font-size: 12px;
   background-color: whitesmoke;
-  height: 625px;
+  /* height: 625px; */
   width: 1000px;
   display: block;
   background-repeat: no-repeat;
@@ -365,6 +362,7 @@
   align-items: center;
   border-radius: 15px;
   box-shadow: 0 10px 10px rgb(0 42 177 / 10%);
+  box-shadow: 0px 5px 6px 2px rgba(33,53,227,0.75);
 }
 
 .modal>.header {
@@ -475,4 +473,8 @@
   padding: 4px;
   border-radius: 5px;
   border: 1px solid var(--primary-color) ;
+}
+
+.first-n {
+  font-weight: bold;
 }

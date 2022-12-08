@@ -40,6 +40,11 @@ nav {
     align-items: center;
 }
 
+.dropdown a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
 .logo {
     margin-top: -14px;
 }

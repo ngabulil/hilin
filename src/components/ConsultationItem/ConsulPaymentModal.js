@@ -64,7 +64,7 @@ export function Payment1({ close }) {
         {error ? <p>{error}</p> : null}
         <form className="modal-form" onSubmit={handleSubmit} >
           <fieldset>
-            <legend>Contact</legend>
+            <legend>Informasi Lengkap</legend>
             <div>
               <label htmlFor="contact-phone-number" />
               <input
@@ -79,7 +79,7 @@ export function Payment1({ close }) {
             </div>
           </fieldset>
           <fieldset>
-            <legend>Billing Address</legend>
+            <legend></legend>
             <div>
               <label htmlFor="billing-address-first-name" />
               <input
@@ -149,9 +149,9 @@ export function Payment1({ close }) {
             </div>
           </fieldset>
           <div className="price-info">
-            Rp.150.000
-          </div>
-          <button className="order-btn-payment" type="submit">Bayar</button>
+            <p>Rp.150.000</p>
+            <button className="order-btn-payment" type="submit">Bayar</button>
+          </div>   
         </form>
       </div>
     </div>
@@ -302,9 +302,10 @@ export function Payment2({ close }) {
             </div>
           </fieldset>
           <div className="price-info">
-            Rp.200.000
+            <p>Rp.200.000</p>
+            <button className="order-btn-payment" type="submit">Bayar</button>
           </div>
-          <button className="order-btn-payment" type="submit">Bayar</button>
+          
         </form>
       </div>
     </div>
@@ -455,9 +456,10 @@ export function Payment3({ close }) {
             </div>
           </fieldset>
           <div className="price-info">
-            Rp.250.000
+            <p>Rp.250.000</p>
+            <button className="order-btn-payment" type="submit">Bayar</button>
           </div>
-          <button className="order-btn-payment" type="submit">Bayar</button>
+          
         </form>
       </div>
     </div>

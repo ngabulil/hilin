@@ -27,7 +27,7 @@ const DetailPage = () => {
                         return (
                             <div key={id}>
                                 <div className="menu-pesanan">
-                                    <p>{firstname} {lastname}</p>
+                                    <p className='first-n'>{firstname} {lastname}</p>
                                     <p>{address}, {city} {region} {pcode}</p>
                                     <p>{contact}</p>
                                     <div className="detail-harga">
