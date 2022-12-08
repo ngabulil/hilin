@@ -24,7 +24,7 @@ export function Payment1({ close }) {
     setError('')
     if (sessionStorage.key('token') != null) 
     {
-      var listPayment = localStorage.getItem('listpayment') ? localStorage.getItem('listpayment') : JSON.stringify([]);
+      let listPayment = localStorage.getItem('listPayment') ? localStorage.getItem('listPayment') : JSON.stringify([]);
       let dataObject = {
         "title" : title,
         "contact" : contact,
@@ -41,7 +41,7 @@ export function Payment1({ close }) {
       listPayment.push(dataObject);
       localStorage.setItem('listPayment',JSON.stringify(listPayment));
       Swal.fire({
-        icon: 'succes',
+        icon: 'success',
         title: 'Selamat!',
         text: 'Pesanan Anda Telah Diproses!',
       })
@@ -68,7 +68,7 @@ export function Payment1({ close }) {
     <fieldset>
     <legend>Contact</legend>
     <div>
-      <label for="contact-phone-number" />
+      <label htmlFor="contact-phone-number" />
       <input
         id="contact-phone-number"
         type="text"
@@ -83,7 +83,7 @@ export function Payment1({ close }) {
     <fieldset>
     <legend>Billing Address</legend>
     <div>
-      <label for="billing-address-first-name" />
+      <label htmlFor="billing-address-first-name" />
       <input
         id="billing-address-first-name"
         //style={inputField}
@@ -93,7 +93,7 @@ export function Payment1({ close }) {
         onChange={(event) => setFirstname(event.target.value)}
         required
       />
-      <label for="billing-address-last-name" />
+      <label htmlFor="billing-address-last-name" />
       <input
         id="billing-address-last-name"
         //style={inputField}
@@ -104,7 +104,7 @@ export function Payment1({ close }) {
         required
       />
       <div>
-        <label for="billing-address-street-address" />
+        <label htmlFor="billing-address-street-address" />
         <input
           id="billing-address-street-address"
           //style={halfInputField}
@@ -116,7 +116,7 @@ export function Payment1({ close }) {
         />
       </div>
       <div>
-        <label for="billing-address-city-locality" />
+        <label htmlFor="billing-address-city-locality" />
         <input
           id="billing-address-city-locality"
           //style={cityInputField}
@@ -126,7 +126,7 @@ export function Payment1({ close }) {
           onChange={(event) => setCity(event.target.value)}
           required
         />
-        <label for="billing-address-state-province" />
+        <label htmlFor="billing-address-state-province" />
         <input
           id="billing-address-state-province"
          //style={stateInputField}
@@ -136,7 +136,7 @@ export function Payment1({ close }) {
           onChange={(event) => setProvince(event.target.value)}
           required
         />
-        <label for="billing-address-postal-code" />
+        <label htmlFor="billing-address-postal-code" />
         <input
           id="billing-address-postal-code"
           //style={postalInputField}
@@ -179,7 +179,7 @@ export function Payment2({ close }) {
     setError('')
     if (sessionStorage.getItem('token') && ('token') !='') 
     {
-      var listPayment = localStorage.getItem('listpayment') ? localStorage.getItem('listpayment') : JSON.stringify([]);
+      var listPayment = localStorage.getItem('listPayment') ? localStorage.getItem('listPayment') : JSON.stringify([]);
       var dataObject = {
         "title" : title,
         "contact" : contact,
@@ -196,7 +196,7 @@ export function Payment2({ close }) {
       listPayment.push(dataObject);
       localStorage.setItem('listPayment',JSON.stringify(listPayment));
       Swal.fire({
-        icon: 'succes',
+        icon: 'success',
         title: 'Selamat!',
         text: 'Pesanan Anda Telah Diproses!',
       })
@@ -223,7 +223,7 @@ export function Payment2({ close }) {
     <fieldset>
     <legend>Contact</legend>
     <div>
-      <label for="contact-phone-number" />
+      <label htmlFor="contact-phone-number" />
       <input
         id="contact-phone-number"
         type="text"
@@ -238,7 +238,7 @@ export function Payment2({ close }) {
     <fieldset>
     <legend>Billing Address</legend>
     <div>
-      <label for="billing-address-first-name" />
+      <label htmlFor="billing-address-first-name" />
       <input
         id="billing-address-first-name"
         //style={inputField}
@@ -248,7 +248,7 @@ export function Payment2({ close }) {
         onChange={(event) => setFirstname(event.target.value)}
         required
       />
-      <label for="billing-address-last-name" />
+      <label htmlFor="billing-address-last-name" />
       <input
         id="billing-address-last-name"
         //style={inputField}
@@ -259,7 +259,7 @@ export function Payment2({ close }) {
         required
       />
       <div>
-        <label for="billing-address-street-address" />
+        <label htmlFor="billing-address-street-address" />
         <input
           id="billing-address-street-address"
           //style={halfInputField}
@@ -271,7 +271,7 @@ export function Payment2({ close }) {
         />
       </div>
       <div>
-        <label for="billing-address-city-locality" />
+        <label htmlFor="billing-address-city-locality" />
         <input
           id="billing-address-city-locality"
           //style={cityInputField}
@@ -281,7 +281,7 @@ export function Payment2({ close }) {
           onChange={(event) => setCity(event.target.value)}
           required
         />
-        <label for="billing-address-state-province" />
+        <label htmlFor="billing-address-state-province" />
         <input
           id="billing-address-state-province"
          //style={stateInputField}
@@ -291,7 +291,7 @@ export function Payment2({ close }) {
           onChange={(event) => setProvince(event.target.value)}
           required
         />
-        <label for="billing-address-postal-code" />
+        <label htmlFor="billing-address-postal-code" />
         <input
           id="billing-address-postal-code"
           //style={postalInputField}
@@ -332,9 +332,9 @@ export function Payment3({ close }) {
   function handleSubmit(event) {
     event.preventDefault();
     setError('')
-    if (sessionStorage.key('token') != null) 
+    if (sessionStorage.getItem('token') && ('token') !='') 
     {
-      var listPayment = localStorage.getItem('listpayment') ? localStorage.getItem('listpayment') : JSON.stringify([]);
+      var listPayment = localStorage.getItem('listPayment') ? localStorage.getItem('listPayment') : JSON.stringify([]);
       var dataObject = {
         "title" : title,
         "contact" : contact,
@@ -351,12 +351,12 @@ export function Payment3({ close }) {
       listPayment.push(dataObject);
       localStorage.setItem('listPayment',JSON.stringify(listPayment));
       Swal.fire({
-        icon: 'succes',
+        icon: 'success',
         title: 'Selamat!',
         text: 'Pesanan Anda Telah Diproses!',
       })
     }
-    else if (sessionStorage.key('token') == null)
+    else
     {
       Swal.fire({
         icon: 'error',
@@ -378,7 +378,7 @@ export function Payment3({ close }) {
     <fieldset>
     <legend>Contact</legend>
     <div>
-      <label for="contact-phone-number" />
+      <label htmlFor="contact-phone-number" />
       <input
         id="contact-phone-number"
         type="text"
@@ -393,7 +393,7 @@ export function Payment3({ close }) {
     <fieldset>
     <legend>Billing Address</legend>
     <div>
-      <label for="billing-address-first-name" />
+      <label htmlFor="billing-address-first-name" />
       <input
         id="billing-address-first-name"
         //style={inputField}
@@ -403,7 +403,7 @@ export function Payment3({ close }) {
         onChange={(event) => setFirstname(event.target.value)}
         required
       />
-      <label for="billing-address-last-name" />
+      <label htmlFor="billing-address-last-name" />
       <input
         id="billing-address-last-name"
         //style={inputField}
@@ -414,7 +414,7 @@ export function Payment3({ close }) {
         required
       />
       <div>
-        <label for="billing-address-street-address" />
+        <label htmlFor="billing-address-street-address" />
         <input
           id="billing-address-street-address"
           //style={halfInputField}
@@ -426,7 +426,7 @@ export function Payment3({ close }) {
         />
       </div>
       <div>
-        <label for="billing-address-city-locality" />
+        <label htmlFor="billing-address-city-locality" />
         <input
           id="billing-address-city-locality"
           //style={cityInputField}
@@ -436,7 +436,7 @@ export function Payment3({ close }) {
           onChange={(event) => setCity(event.target.value)}
           required
         />
-        <label for="billing-address-state-province" />
+        <label htmlFor="billing-address-state-province" />
         <input
           id="billing-address-state-province"
          //style={stateInputField}
@@ -446,7 +446,7 @@ export function Payment3({ close }) {
           onChange={(event) => setProvince(event.target.value)}
           required
         />
-        <label for="billing-address-postal-code" />
+        <label htmlFor="billing-address-postal-code" />
         <input
           id="billing-address-postal-code"
           //style={postalInputField}
