@@ -23,6 +23,7 @@ const Navigation = () => {
   const handleLogout = async () => {
     try {
       await logOut();
+      window.sessionStorage.clear();
       toast.success("Logout Success !", {
         autoClose: 2000,
       });

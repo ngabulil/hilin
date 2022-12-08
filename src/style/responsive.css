@@ -195,7 +195,7 @@
 
     .content-pelayanan-isi p {
         font-size: 15px;
-        /* text-align: justify; */
+        text-align: justify;
     }
 
     .content-team {
@@ -1118,7 +1118,7 @@
 
     .content-pelayanan-isi p {
         font-size: 15px;
-        /* text-align: justify; */
+        text-align: justify;
     }
 
     .content-team {
@@ -1413,6 +1413,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 30px;
+    }
+
+    .sosmed {
+        margin-top: 25px;
     }
 
     .article-detail {

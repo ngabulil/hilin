@@ -6,7 +6,11 @@ import Swal from 'sweetalert2';
 
 export function Payment1({ close }) {
 
+<<<<<<< HEAD
   const title = "Nyaman";
+=======
+  const title = "Premium";
+>>>>>>> 88593e24c8fb005ce8d5c8f2b52df81224dc5c1f
   const [contact, setContact] = useState();
   const [firstname, setFirstname] = useState();
   const [lastname, setLastname] = useState();
@@ -59,7 +63,11 @@ export function Payment1({ close }) {
     <a className="close" onClick={close}>
       &times;
     </a>
+<<<<<<< HEAD
     <div className="header"> Paket Nyaman </div>
+=======
+    <div className="header"> Paket Premium </div>
+>>>>>>> 88593e24c8fb005ce8d5c8f2b52df81224dc5c1f
     <div className="content">
     <form className="modal-form" onSubmit={handleSubmit} >
     <fieldset>
@@ -150,7 +158,11 @@ export function Payment1({ close }) {
 
 export function Payment2({ close }) {
 
+<<<<<<< HEAD
   const title = "Sayang";
+=======
+  const title = "Premium";
+>>>>>>> 88593e24c8fb005ce8d5c8f2b52df81224dc5c1f
   const [contact, setContact] = useState();
   const [firstname, setFirstname] = useState();
   const [lastname, setLastname] = useState();
@@ -202,7 +214,11 @@ export function Payment2({ close }) {
     <a className="close" onClick={close}>
       &times;
     </a>
+<<<<<<< HEAD
     <div className="header"> Paket Sayang </div>
+=======
+    <div className="header"> Paket Nyaman </div>
+>>>>>>> 88593e24c8fb005ce8d5c8f2b52df81224dc5c1f
     <div className="content">
     <form className="modal-form" onSubmit={handleSubmit} >
     <fieldset>
