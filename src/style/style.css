@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 :root {
     --primary-color: #2135E3;
     --hover-color: #0012af;
@@ -66,6 +70,15 @@ nav .menu ul li a:hover {
     color: var(--hover-color);
 }
 
+.btn-user {
+    padding: 7px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--hover-color)
+}
 .btn-login {
     background-color: var(--primary-color);
     padding: 7px 40px;
@@ -122,6 +135,16 @@ input[type=password] {
     border: 1px solid var(--white-color);
 }
 
+.button-google {
+    width: 180px;
+    height: 50px;
+    border: none;
+    font-size: 14px;
+    margin: 0 70px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
 .button-login {
     border-radius: 15px;
     background-color: var(--primary-color);
@@ -157,6 +180,11 @@ button:hover {
 
 .info-login {
     margin: 0 27px;
+    font-size: 14px;
+}
+
+.info-register {
+    margin: 0 32px;
     font-size: 14px;
 }
 
