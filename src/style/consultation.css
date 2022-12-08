@@ -384,3 +384,92 @@
   background: red;
   border-radius: 18px;
 }
+
+.modal {
+  font-size: 12px;
+  background-color: whitesmoke;
+  height: 625px;
+  width: 1000px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgb(0 42 177 / 10%);
+}
+
+.modal>.header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 36px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  background: #2135E3;
+  color: white;
+}
+
+.modal>.content {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: transparent;
+}
+
+.modal-form {
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 0px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.modal>.actions {
+  margin: auto;
+  background: transparent;
+}
+
+.modal>.actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  background: transparent;
+}
+
+.modal>.close {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: red;
+  border-radius: 18px;
+}
+
+.price-info {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.order-btn-payment {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #2135E3;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+  width: 225px;
+  height: 70px;
+  margin-top: -55px;
+  margin-right: 25px;
+}

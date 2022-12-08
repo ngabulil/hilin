@@ -2,6 +2,10 @@ import React from 'react';
 import TeamProject from './TeamProject';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
+import ulil from '../../assets/ulil.png'
+import rahmat from '../../assets/rahmat.jpeg'
+import audy from '../../assets/audy.jpeg'
+import alfian from '../../assets/alfian.jpeg'
 
 export default function HeaderHomepage4() {
   return (
@@ -25,26 +29,26 @@ export default function HeaderHomepage4() {
         </div>
         <div className='content-team-main'>
           <TeamProject
-            ImgOrang='https://media-exp1.licdn.com/dms/image/C5603AQGjWyZmu9B0qw/profile-displayphoto-shrink_800_800/0/1661484275984?e=1675296000&v=beta&t=ef8bGGsIPmhZW9uEsS9v8M_EgNiRhyohd_caieNGA54'
+            ImgOrang={rahmat}
             link='https://www.linkedin.com/in/rahmat-hidayat29/'
             nama='Rahmat Hidayat'
             info='Univeritas Raharja'
             deskripsi='“Take your time healing, as long as you want. Nobody else knows what you’ve been through. How could they know how long it will take to heal you?” — Abertoli' />
           <TeamProject
-            ImgOrang='https://media-exp1.licdn.com/dms/image/D5603AQFUT6XC0K9lkA/profile-displayphoto-shrink_800_800/0/1668319806242?e=1675296000&v=beta&t=TNDS1hH2qmkQWChAzXwng51_rqFznYC3JZ7d6M_EocI'
+            ImgOrang={ulil}
             link='https://www.linkedin.com/in/yoga-ulil-al-baab-b7a63b247/'
             nama='Yoga Ulil Al Baab'
             info='Univeritas Raharja'
             deskripsi='“Happiness can be found even in the darkest of times, if one only remembers to turn on the light.” — Albus Dumbledore
             ' />
           <TeamProject
-            ImgOrang='https://media-exp1.licdn.com/dms/image/D5603AQE6lmiyppKlZg/profile-displayphoto-shrink_800_800/0/1667717407114?e=1675296000&v=beta&t=QdwBESWSQv51Ou_KbGvcE1q_or-4zW1-YYwt26o6qxM'
+            ImgOrang={alfian}
             link='https://id.linkedin.com/in/alfian-nasrullah-ba4158256'
             nama='Moch. Alfian Nasrullah'
             info='Politeknik Elektronika Negeri Surabaya'
             deskripsi='“You can’t control everything. Sometimes you just need to relax and have faith that things will work out. Let go a little and just let life happen.” — Kody Keplinger' />
           <TeamProject
-            ImgOrang='https://media-exp1.licdn.com/dms/image/C5603AQFaZaqfEy43nA/profile-displayphoto-shrink_400_400/0/1667866765184?e=1675296000&v=beta&t=g3zloDksMyOBOJEhoxsUtcE-eCvDXWrN1bVLKxC8FOY'
+            ImgOrang={audy}
             link='https://www.linkedin.com/in/audyistanianarita/'
             nama='Audy Istania Narita'
             info='Politeknik Elektronika Negeri Surabaya'
