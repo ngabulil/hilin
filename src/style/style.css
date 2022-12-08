@@ -282,6 +282,10 @@ button:hover {
     width: 550px;
 }
 
+.img-profile {
+    border-radius: 50%;
+}
+
 .article-detail-content {
     width: 600px;
     height: 300px;

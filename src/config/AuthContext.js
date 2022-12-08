@@ -12,6 +12,7 @@ import {
 
 const AuthContext = createContext();
 
+
 export function AuthContextProvider({ children }) {
     const [user, setUser] = useState({});
 
@@ -25,6 +26,7 @@ export function AuthContextProvider({ children }) {
     }
 
     function logIn(email, password) {
+
         return signInWithEmailAndPassword(auth, email, password)
     }
 
