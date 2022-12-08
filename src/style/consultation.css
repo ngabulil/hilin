@@ -21,7 +21,7 @@
 }
 
 .consul-description p {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .header-title {
@@ -76,11 +76,11 @@
   display: flex;
 }
 
-.article-item p {
+/* .article-item p {
   background-color: white;
   font-size: 20px;
   font-weight: 500;
-}
+} */
 
 .article-item-left {
   /* padding-left: 30px;
@@ -157,9 +157,8 @@
 
 .consul-payment {
   width: 90%;
-  margin: 90px 45px;
+  margin: 90px auto;
   display: flex;
-  margin-bottom: 80px;
 }
 
 .consul-payment-content {
@@ -219,6 +218,29 @@
 .pricing-card-list {
   margin-top: 50px;
   list-style: none;
+}
+
+.price-info {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.order-btn-payment {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #2135E3;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: .3s linear;
+  width: 180px;
+  height: 60px;
+  margin-top: -55px;
+  margin-right: 25px;
 }
 
 .price-time {
@@ -291,7 +313,7 @@
 }
 
 .pricing-card li {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -308,12 +330,6 @@
   transition: .3s linear;
 }
 
-.price-info {
-  display: flex;
-  margin-left: 25px;
-  margin-top: 50px;
-  font-size: 25px;
-}
 .order-btn {
   cursor: pointer;
   margin: auto;
@@ -323,7 +339,6 @@
   color: white;
   background-color: #2135E3;
   border-radius: 15px;
-  text-transform: uppercase;
   font-weight: 500;
   transition: .3s linear;
   margin-top: 50px;
@@ -331,26 +346,8 @@
   height: 70px;
 }
 
-.order-btn-payment {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
-  border: none;
-  color: white;
-  background-color: #2135E3;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: .3s linear;
-  width: 225px;
-  height: 70px;
-  margin-top: -55px;
-  margin-right: 25px;
-}
-
 .order-btn:hover {
-  background-color: white;
-  color: #2135E3;
+  opacity: 0.7;
 }
 
 .popup-overlay {
@@ -420,4 +417,62 @@
   font-size: 24px;
   background: red;
   border-radius: 18px;
+}
+
+.detail-pesanan {
+  margin: 40px 10%;
+  background: white;
+  min-height: 550px;
+  border-radius: 20px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+
+.detail-pesanan h1 {
+  margin: 10 auto;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.detail-pesanan-saya h2 {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.menu-pesanan {
+  margin-top: 20px;
+  padding: 20px 80px;
+}
+
+.menu-pesanan p {
+  font-size: 24px;
+  padding: 5px;
+}
+
+
+.detail-harga p {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 4px;
+}
+.detail-harga {
+  border-radius: 15px;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin-top: 8% ;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  padding: 20px;
+}
+
+.detail-harga h3 {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color) ;
 }

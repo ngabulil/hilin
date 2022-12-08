@@ -5,7 +5,7 @@ import "../../style/consultation.css";
 
 export default function ConsulPayment() {
   return (
-    <div className="consul-payment" data-aos="fade-up" data-aos-duration="2000">
+    <div id="consulpayment" className="consul-payment" data-aos="fade-up" data-aos-duration="2000">
       <div className="consul-payment-content">
         <div className="consul-payment-title">
           <h1>Paket Konsultasi Dengan Mentor</h1>
@@ -13,7 +13,7 @@ export default function ConsulPayment() {
         <div className="pricing-table">
           <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
-              <p className="p-premium">Paket Premium</p>
+              <p className="p-premium">Paket Nyaman</p>
               <p>150K</p>
             </div>
             <div className="price-time">
@@ -39,7 +39,7 @@ export default function ConsulPayment() {
           </div>
           <div className="pricing-card" data-aos="fade-up" data-aos-duration="1500">
             <div className="row-price">
-              <p className="p-premium">Paket Nyaman</p>
+              <p className="p-premium">Paket Sayang</p>
               <p>200K</p>
             </div>
             <div className="price-time">

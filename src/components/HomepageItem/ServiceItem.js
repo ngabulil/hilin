@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class ServiceItem extends Component {
   render() {
@@ -16,3 +17,8 @@ export default class ServiceItem extends Component {
   }
 }
 
+ServiceItem.propTypes = {
+  icon: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}

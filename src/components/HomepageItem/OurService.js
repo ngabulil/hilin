@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 export default function HeaderHomepage2() {
   return (
     <div className="container-2" data-aos="fade-up" data-aos-duration="2000">
-      <h1>Our Service</h1>
+      <h1 id='h1-service'>Our Service</h1>
       <div className="container-2-content">
         <ServiceItem
           icon={IconArticle}
@@ -26,11 +26,11 @@ export default function HeaderHomepage2() {
         />
         <ServiceItem
           icon={IconKonsultasi}
-          title="Konsultasi"
+          title="Consultation"
           description="Konsultasi dengan mentor profesional untuk refleksi diri dan mengurangi stres yang anda hadapi"
         />
       </div>
-      <div className="container-3">
+      <div className="container-3" id='our-service'>
         <div className="article-detail" data-aos="fade-right" data-aos-duration="1500">
           <div className="article-detail-img">
             <img src={ArticleImg} alt="Article Icon" />
@@ -72,7 +72,7 @@ export default function HeaderHomepage2() {
             <img src={Konsultasi} alt="Article Icon" />
           </div>
           <div className="article-detail-content">
-            <h1>Konsultasi</h1>
+            <h1>Consultation</h1>
             <div className="article-detail-img-1">
               <img src={Konsultasi} alt="Article Icon" />
             </div>

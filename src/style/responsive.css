@@ -11,10 +11,6 @@
         display: none;
     }
 
-    nav .menu ul li a:hover {
-        /* border-bottom: 2px solid var(--primary-color); */
-    }
-
     /* end menu */
     .hamburger {
         display: flex;
@@ -41,16 +37,11 @@
         row-gap: 10px;
     }
 
-    .navbar.expanded {
-        /* height: 100vh; */
-    }
-
     .navbar.expanded .menu {
         box-shadow: 0px 5px 5px 2px rgba(33, 53, 227, 0.8);
         background-color: var(--white-color);
         padding: 10px 0;
         display: block;
-        /* height: 100vh; */
         position: absolute;
         top: 61px;
         left: 0;
@@ -204,7 +195,7 @@
 
     .content-pelayanan-isi p {
         font-size: 15px;
-        /* text-align: justify; */
+        text-align: justify;
     }
 
     .content-team {
@@ -409,10 +400,6 @@
         align-items: center;
         padding: 0 5px;
         position: relative;
-    }
-
-    .navbar.expanded {
-        /* height: 100vh; */
     }
 
     .navbar.expanded .menu {
@@ -620,6 +607,7 @@
         flex-direction: column;
         row-gap: 20px;
     }
+
 }
 
 /* jksdhaksjdbkasjdkasjdbkasjdbkasd */
@@ -650,10 +638,6 @@
         align-items: center;
         padding: 0 5px;
         position: relative;
-    }
-
-    .navbar.expanded {
-        /* height: 100vh; */
     }
 
     .navbar.expanded .menu {
@@ -927,10 +911,6 @@
         position: relative;
     }
 
-    .navbar.expanded {
-        /* height: 100vh; */
-    }
-
     .navbar.expanded .menu {
         box-shadow: 0px 5px 5px 2px rgba(33, 53, 227, 0.8);
         background-color: var(--white-color);
@@ -1121,6 +1101,7 @@
         min-width: 581px;
         max-width: 700px;
         margin: auto;
+        padding: 0 20px;
     }
 
     .content-pelayanan {
@@ -1137,7 +1118,7 @@
 
     .content-pelayanan-isi p {
         font-size: 15px;
-        /* text-align: justify; */
+        text-align: justify;
     }
 
     .content-team {
@@ -1434,6 +1415,10 @@
         row-gap: 30px;
     }
 
+    .sosmed {
+        margin-top: 25px;
+    }
+
     .article-detail {
         margin: 0;
         width: 100%;
@@ -1574,7 +1559,6 @@
     }
 
     .team-project-content-isi {
-        margin-top: 20px;
         align-items: center;
     }
 
@@ -1600,10 +1584,6 @@
     .footer-content img {
         max-width: 192px;
         margin-top: -17px;
-    }
-
-    .footer-content .sosmed {
-        margin-top: 20px;
     }
 
     .login-page {
