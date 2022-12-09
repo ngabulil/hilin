@@ -17,6 +17,6 @@
         "react"
     ],
     "rules": {
-        "linebreak-style": ["error", "lf"]
+        "linebreak-style": 0
     }
 }
