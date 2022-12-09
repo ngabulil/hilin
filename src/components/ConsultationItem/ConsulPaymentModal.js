@@ -63,8 +63,8 @@ export function Payment1({ close }) {
       <div className="content">
         {error ? <p>{error}</p> : null}
         <form className="modal-form" onSubmit={handleSubmit} >
-          <fieldset>
-            <legend>Informasi Lengkap</legend>
+          <fieldset className="field-1">
+            <legend>Kontak</legend>
             <div>
               <label htmlFor="contact-phone-number" />
               <input
@@ -78,9 +78,9 @@ export function Payment1({ close }) {
               />
             </div>
           </fieldset>
-          <fieldset>
-            <legend></legend>
-            <div>
+          <fieldset className="field-2">
+            <legend>Informasi Lengkap</legend>
+            <div className="field2-div-1">
               <label htmlFor="billing-address-first-name" />
               <input
                 id="billing-address-first-name"
@@ -101,7 +101,7 @@ export function Payment1({ close }) {
                 onChange={(event) => setLastname(event.target.value)}
                 required
               />
-              <div>
+              <div className="field2-div-2">
                 <label htmlFor="billing-address-street-address" />
                 <input
                   id="billing-address-street-address"
@@ -113,7 +113,7 @@ export function Payment1({ close }) {
                   required
                 />
               </div>
-              <div>
+              <div className="field2-div-3">
                 <label htmlFor="billing-address-city-locality" />
                 <input
                   id="billing-address-city-locality"
@@ -216,8 +216,8 @@ export function Payment2({ close }) {
       <div className="content">
         {error ? <p>{error}</p> : null}
         <form className="modal-form" onSubmit={handleSubmit} >
-          <fieldset>
-            <legend>Contact</legend>
+          <fieldset className="field-1">
+            <legend>Kontak</legend>
             <div>
               <label htmlFor="contact-phone-number" />
               <input
@@ -231,9 +231,9 @@ export function Payment2({ close }) {
               />
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Billing Address</legend>
-            <div>
+          <fieldset className="field-2">
+            <legend>Informasi Lengkap</legend>
+            <div className="field2-div-1">
               <label htmlFor="billing-address-first-name" />
               <input
                 id="billing-address-first-name"
@@ -254,7 +254,7 @@ export function Payment2({ close }) {
                 onChange={(event) => setLastname(event.target.value)}
                 required
               />
-              <div>
+              <div className="field2-div-2">
                 <label htmlFor="billing-address-street-address" />
                 <input
                   id="billing-address-street-address"
@@ -266,7 +266,7 @@ export function Payment2({ close }) {
                   required
                 />
               </div>
-              <div>
+              <div className="field2-div-3">
                 <label htmlFor="billing-address-city-locality" />
                 <input
                   id="billing-address-city-locality"
@@ -370,8 +370,8 @@ export function Payment3({ close }) {
       <div className="content">
         {error ? <p>{error}</p> : null}
         <form className="modal-form" onSubmit={handleSubmit} >
-          <fieldset>
-            <legend>Contact</legend>
+          <fieldset className="field-1">
+            <legend>Kontak</legend>
             <div>
               <label htmlFor="contact-phone-number" />
               <input
@@ -385,9 +385,9 @@ export function Payment3({ close }) {
               />
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Billing Address</legend>
-            <div>
+          <fieldset className="field-2">
+            <legend>Informasi Lengkap</legend>
+            <div className="field2-div-1">
               <label htmlFor="billing-address-first-name" />
               <input
                 id="billing-address-first-name"
@@ -408,7 +408,7 @@ export function Payment3({ close }) {
                 onChange={(event) => setLastname(event.target.value)}
                 required
               />
-              <div>
+              <div className="field2-div-2">
                 <label htmlFor="billing-address-street-address" />
                 <input
                   id="billing-address-street-address"
@@ -420,7 +420,7 @@ export function Payment3({ close }) {
                   required
                 />
               </div>
-              <div>
+              <div className="field2-div-3">
                 <label htmlFor="billing-address-city-locality" />
                 <input
                   id="billing-address-city-locality"
