@@ -1,10 +1,9 @@
-import {React, useEffect }from 'react';
+import {React, useEffect, useState }from 'react';
 import Navigation from '../components/Navigation';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { collection, orderBy, limit, query, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db, auth } from '../config/Firebase';
-import { useState } from 'react';
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import anonim from "../assets/anonim.png";
 import Swal from 'sweetalert2';
@@ -66,15 +65,20 @@ const SupportPage = () => {
 function ChatMessage(props) {
     if (!auth.currentUser) return
 
-    const { text, uid } = props.message
+    const { createdAt, text, uid } = props.message
+
+    let hours = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds/1000000).toLocaleString('default', { hour: '2-digit', minute: '2-digit' });
+    console.log(hours);
+    let day = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds/1000000).toLocaleString('default', { day: 'numeric', month: 'long', year: 'numeric' });
+    console.log(day);
 
     const className = uid === auth.currentUser.uid ? "sent" : "received"
     return (
         <div className={className}>
             <div className="anonim">
                 <img src={anonim} alt="anonim" />
+                <p>{day + " - "+ hours}</p>
                 <p>{text}</p>
-
             </div>
         </div>
     )
