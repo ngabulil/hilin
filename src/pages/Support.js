@@ -1,4 +1,4 @@
-import {React, useEffect }from 'react';
+import React from 'react';
 import Navigation from '../components/Navigation';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollection } from 'react-firebase-hooks/firestore'
@@ -7,12 +7,10 @@ import { db, auth } from '../config/Firebase';
 import { useState } from 'react';
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import anonim from "../assets/anonim.png";
-import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
 
 const SupportPage = () => {
     const [user] = useAuthState(auth)
-    const navigate = useNavigate();
+
     const messageRef = collection(db, "messages")
     const queryRef = query(messageRef, orderBy("createdAt", "desc"), limit(20));
     const [messages] = useCollection(queryRef, { idField: "id" })
@@ -29,16 +27,7 @@ const SupportPage = () => {
         setFormValue('')
 
     }
-    useEffect(() => {
-    if (sessionStorage.key('token') == null) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Anda Belum Login',
-          })
-        navigate('/login');
-          }
-      });
+
 
     return (
         <div>
