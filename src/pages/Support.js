@@ -1,4 +1,4 @@
-import {React, useEffect, useState }from 'react';
+import { React, useEffect, useState } from 'react';
 import Navigation from '../components/Navigation';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollection } from 'react-firebase-hooks/firestore'
@@ -29,15 +29,15 @@ const SupportPage = () => {
 
     }
     useEffect(() => {
-    if (sessionStorage.key('token') == null) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Anda Belum Login',
-          })
-        navigate('/login');
-          }
-      });
+        if (sessionStorage.key('token') == null) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Anda Belum Login',
+            })
+            navigate('/login');
+        }
+    });
 
     return (
         <div>
@@ -67,18 +67,21 @@ function ChatMessage(props) {
 
     const { createdAt, text, uid } = props.message
 
-    let hours = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds/1000000).toLocaleString('default', { hour: '2-digit', minute: '2-digit' });
-    console.log(hours);
-    let day = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds/1000000).toLocaleString('default', { day: 'numeric', month: 'long', year: 'numeric' });
-    console.log(day);
+    let hours = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds / 1000000).toLocaleString('default', { hour: '2-digit', minute: '2-digit' });
+    let day = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds / 1000000).toLocaleString('default', { day: 'numeric', month: 'long', year: 'numeric' });
+
 
     const className = uid === auth.currentUser.uid ? "sent" : "received"
     return (
         <div className={className}>
             <div className="anonim">
                 <img src={anonim} alt="anonim" />
-                <p>{day + " - "+ hours}</p>
-                <p>{text}</p>
+
+                <div className="text-chat">
+                    <p>{text}</p>
+                    <hr />
+                    <h6>{day + " - " + hours}</h6>
+                </div>
             </div>
         </div>
     )
