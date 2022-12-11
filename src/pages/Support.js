@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from 'react';
 import Navigation from '../components/Navigation';
-import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { collection, orderBy, limit, query, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db, auth } from '../config/Firebase';
