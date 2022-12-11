@@ -27,7 +27,7 @@ export function Payment1({ close }) {
     event.preventDefault();
     setError('')
     if (user != null) {
-      addDoc(collection(db, "payment/user/"+ user.email), {
+      addDoc(collection(db, "payment"), {
         "uid" : user.uid,
         "title": title,
         "contact": contact,
@@ -179,7 +179,7 @@ export function Payment2({ close }) {
     event.preventDefault();
     setError('')
     if (user != null) {
-      addDoc(collection(db, "payment/user/"+ user.email), {
+      addDoc(collection(db, "payment"), {
         "uid" : user.uid,
         "title": title,
         "contact": contact,
@@ -332,7 +332,7 @@ export function Payment3({ close }) {
     event.preventDefault();
     setError('')
     if (user != null) {
-      addDoc(collection(db, "payment/user/"+ user.email), {
+      addDoc(collection(db, "payment"), {
         "uid" : user.uid,
         "title": title,
         "contact": contact,
