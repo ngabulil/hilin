@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from 'react';
 import Navigation from '../components/Navigation';
-import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { collection, orderBy, limit, query, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db, auth } from '../config/Firebase';
@@ -69,9 +68,18 @@ function ChatMessage(props) {
 
     const { createdAt, text, uid } = props.message
 
-    let hours = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds / 1000000).toLocaleString('default', { hour: '2-digit', minute: '2-digit' });
-    let day = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds / 1000000).toLocaleString('default', { day: 'numeric', month: 'long', year: 'numeric' });
+    let hours;
+    let day;
 
+    if(createdAt != null) {
+        hours = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds / 1000000).toLocaleString('default', { hour: '2-digit', minute: '2-digit' });
+        day = new Date(createdAt.seconds * 1000 + createdAt.nanoseconds / 1000000).toLocaleString('default', { day: 'numeric', month: 'long', year: 'numeric' });
+    } else {
+        hours = new Date().toLocaleString('default', { hour: '2-digit', minute: '2-digit' });
+        console.log(hours)
+        day = new Date().toLocaleString('default', { day: 'numeric', month: 'long', year: 'numeric' });
+        console.log(day)
+    }
 
     const className = uid === auth.currentUser.uid ? "sent" : "received"
     return (
