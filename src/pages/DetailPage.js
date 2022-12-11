@@ -1,28 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
+import React from "react";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../config/Firebase";
+import { UserAuth } from "../config/AuthContext";
 
-const DetailPage = () => {
-    const [listPayment, setListPayment] = useState([]);
+function DetailPesanan() {
+  const [payment, setPayment] = useState([]);
+  const { user } = UserAuth();
 
-    useEffect(() => {
-        const listPayment = JSON.parse(localStorage.getItem('listPayment'));
-        if (listPayment) {
-            setListPayment(listPayment);
-        }
-    }, []);
-
-    useEffect(() => {
-        localStorage.setItem('listPayment', JSON.stringify(listPayment));
-    }, [listPayment]);
-
-    return (
-        <><Navigation />
+  useEffect(() => {
+    const listPayment = async () => {
+      const getPayment = await getDocs(collection(db, "payment/user/"+ user.email));
+      setPayment(
+        getPayment.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+      );
+    };
+    listPayment();
+  });
+  return (
+    <><Navigation />
             <div className="detail-pesanan">
                 <h1>Pesanan Saya</h1>
                 <div className="detail-pesanan-saya">
                     <h2>Riwayat Pesanan</h2>
-                    {listPayment.map((item) => {
+                    {payment.map((item) => {
                         const { id, price, title, firstname, lastname, address, city, region, pcode, contact } = item;
                         return (
                             <div key={id}>
@@ -45,7 +48,7 @@ const DetailPage = () => {
 
             </div>
             <Footer /></>
-    )
+  );
 }
 
-export default DetailPage
+export default DetailPesanan;

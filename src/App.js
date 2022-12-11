@@ -9,8 +9,8 @@ import MentalTestPage from './pages/MentalTestPage';
 import MentalTestResultPage from './pages/MentalTestResultPage';
 import { AuthContextProvider } from './config/AuthContext';
 import ConsultationPage from './pages/ConsultationPage';
-import Support from './pages/Support'
-import DetailPage from './pages/DetailPage'
+import Support from './pages/Support';
+import DetailPage from './pages/DetailPage';
 
 function App() {
   return (
