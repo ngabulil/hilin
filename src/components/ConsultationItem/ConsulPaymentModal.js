@@ -3,9 +3,13 @@ import { React, useState } from "react";
 //import DateTimePicker from 'react-datetime-picker';
 import '../../style/consultation.css';
 import Swal from 'sweetalert2';
+import { UserAuth } from "../../config/AuthContext";
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../config/Firebase';
 
 export function Payment1({ close }) {
 
+  const { user } = UserAuth();
   const title = "Nyaman";
   const [contact, setContact] = useState();
   const [firstname, setFirstname] = useState();
@@ -18,13 +22,13 @@ export function Payment1({ close }) {
   const [error, setError] = useState('')
   //const [datetime, setDatetime] = useState(new Date());
 
-
   function handleSubmit(event) {
+    console.log(user);
     event.preventDefault();
     setError('')
-    if (sessionStorage.key('token') != null) {
-      let listPayment = localStorage.getItem('listPayment') ? localStorage.getItem('listPayment') : JSON.stringify([]);
-      let dataObject = {
+    if (user != null) {
+      addDoc(collection(db, "payment"), {
+        "uid" : user.uid,
         "title": title,
         "contact": contact,
         "firstname": firstname,
@@ -34,25 +38,22 @@ export function Payment1({ close }) {
         "province": province,
         "pcode": pcode,
         "price": price,
-        //"datetime" : datetime,
-      }
-      listPayment = JSON.parse(listPayment);
-      listPayment.push(dataObject);
-      localStorage.setItem('listPayment', JSON.stringify(listPayment));
-      Swal.fire({
-        icon: 'success',
-        title: 'Selamat!',
-        text: 'Pesanan Anda Telah Diproses!',
-      })
+    },
+    Swal.fire({
+      icon: 'success',
+      title: 'Selamat!',
+      text: 'Pesanan Anda Telah Diproses!',
+    })
+    )
     }
-    else if (sessionStorage.key('token') == null) {
+    else if (user == null) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Anda Belum Login',
       })
     }
-  };
+  }
 
   return (
     <div className="modal">
@@ -160,6 +161,7 @@ export function Payment1({ close }) {
 
 export function Payment2({ close }) {
 
+  const { user } = UserAuth();
   const title = "Sayang";
   const [contact, setContact] = useState();
   const [firstname, setFirstname] = useState();
@@ -173,11 +175,12 @@ export function Payment2({ close }) {
   //const [datetime, setDatetime] = useState(new Date());
 
   function handleSubmit(event) {
+    console.log(user);
     event.preventDefault();
     setError('')
-    if (sessionStorage.getItem('token') && ('token') != '') {
-      var listPayment = localStorage.getItem('listPayment') ? localStorage.getItem('listPayment') : JSON.stringify([]);
-      var dataObject = {
+    if (user != null) {
+      addDoc(collection(db, "payment"), {
+        "uid" : user.uid,
         "title": title,
         "contact": contact,
         "firstname": firstname,
@@ -187,25 +190,22 @@ export function Payment2({ close }) {
         "province": province,
         "pcode": pcode,
         "price": price,
-        //"datetime" : datetime,
-      }
-      listPayment = JSON.parse(listPayment);
-      listPayment.push(dataObject);
-      localStorage.setItem('listPayment', JSON.stringify(listPayment));
-      Swal.fire({
-        icon: 'success',
-        title: 'Selamat!',
-        text: 'Pesanan Anda Telah Diproses!',
-      })
+    },
+    Swal.fire({
+      icon: 'success',
+      title: 'Selamat!',
+      text: 'Pesanan Anda Telah Diproses!',
+    })
+    )
     }
-    else {
+    else if (user == null) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Anda Belum Login',
       })
     }
-  };
+  }
 
   return (
     <div className="modal">
@@ -313,7 +313,8 @@ export function Payment2({ close }) {
 }
 
 export function Payment3({ close }) {
-
+  
+  const { user } = UserAuth();
   const title = "Bahagia";
   const [contact, setContact] = useState();
   const [firstname, setFirstname] = useState();
@@ -327,11 +328,12 @@ export function Payment3({ close }) {
   //const [datetime, setDatetime] = useState(new Date());
 
   function handleSubmit(event) {
+    console.log(user);
     event.preventDefault();
     setError('')
-    if (sessionStorage.getItem('token') && ('token') != '') {
-      var listPayment = localStorage.getItem('listPayment') ? localStorage.getItem('listPayment') : JSON.stringify([]);
-      var dataObject = {
+    if (user != null) {
+      addDoc(collection(db, "payment"), {
+        "uid" : user.uid,
         "title": title,
         "contact": contact,
         "firstname": firstname,
@@ -341,25 +343,22 @@ export function Payment3({ close }) {
         "province": province,
         "pcode": pcode,
         "price": price,
-        //"datetime" : datetime,
-      }
-      listPayment = JSON.parse(listPayment);
-      listPayment.push(dataObject);
-      localStorage.setItem('listPayment', JSON.stringify(listPayment));
-      Swal.fire({
-        icon: 'success',
-        title: 'Selamat!',
-        text: 'Pesanan Anda Telah Diproses!',
-      })
+    },
+    Swal.fire({
+      icon: 'success',
+      title: 'Selamat!',
+      text: 'Pesanan Anda Telah Diproses!',
+    })
+    )
     }
-    else {
+    else if (user == null) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Anda Belum Login',
       })
     }
-  };
+  }
 
   return (
     <div className="modal">
