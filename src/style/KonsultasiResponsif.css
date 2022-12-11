@@ -8,7 +8,7 @@
         margin-top: 20px;
         padding: 0px 10px;
     }
-    
+
     .menu-pesanan p {
         font-size: 18px;
         padding: 3px;
@@ -16,7 +16,16 @@
 
     .detail-harga {
         /* margin-top: 30%; */
+        padding-left: 5px;
+        padding-right: 5px;
         column-gap: 32px;
+    }
+
+    .detail-harga :nth-of-type(1) {
+        padding: 10px 0;
+        width: 50%;
+        font-size: 15px;
+        text-align: center;
     }
 
     .consul-header {
@@ -111,6 +120,115 @@
     .pricing-card {
         width: auto;
     }
+
+    .modal {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+
+    }
+
+    .modal>.close {
+        right: 5px;
+    }
+
+    .modal input {
+        width: 100%;
+        height: 40px;
+        margin: 7px 0;
+    }
+
+    .modal fieldset {
+        padding: 0 10px;
+    }
+
+    .order-btn-payment {
+        float: none;
+        width: 50%;
+        margin: 0;
+    }
+
+    .price-info {
+        align-items: center;
+        margin: auto 0 0;
+        column-gap: 20px;
+    }
+
+    .price-info p {
+        width: 50%;
+    }
+
+    .detail-pesanan {
+        margin: 40px 5%;
+    }
+
+    .menu-pesanan :nth-of-type(1) {
+        font-weight: bold;
+    }
+
+    .popup-content {
+        height: 95%;
+    }
+
+    .modal>.header {
+        font-size: 24px;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .modal>.content {
+        height: 93%;
+    }
+
+    .field-1 {
+        height: 15%;
+    }
+
+    .field-1 div {
+        display: flex;
+        align-items: center;
+        height: 90%;
+    }
+
+    .field-1 input {
+        height: 80%;
+    }
+
+    .field-2 {
+        height: 70%;
+    }
+
+    .field2-div-1 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .field2-div-1 input {
+        height: 12%;
+    }
+
+    .field2-div-2 {
+        height: 12%;
+        margin: 6px 0;
+    }
+
+    .field2-div-2 input {
+        height: 100%;
+        margin: 0;
+    }
+
+    .field2-div-3 {
+        height: 49%;
+    }
+
+    .field2-div-3 input {
+        height: 25%;
+    }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
@@ -189,9 +307,11 @@
         width: auto;
         margin: 20px 5px 80px;
     }
+
     .consul-payment-content {
         width: 100%;
     }
+
     .consul-payment-title {
         padding: 0 20px;
         width: auto;
@@ -213,6 +333,139 @@
 
     .pricing-card {
         width: 350px;
+    }
+
+    .modal {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+
+    }
+
+    .modal>.close {
+        right: 5px;
+    }
+
+    .modal input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .modal fieldset {
+        padding: 0 10px;
+    }
+
+    .order-btn-payment {
+        float: none;
+        width: 50%;
+        margin: 0;
+    }
+
+    .price-info {
+        align-items: center;
+        margin: auto 0 0;
+    }
+
+    .price-info p {
+        width: 50%;
+    }
+
+    .detail-pesanan {
+        margin: 40px 5%;
+    }
+
+    .menu-pesanan {
+        padding: 20px 8px;
+    }
+
+    .detail-harga {
+        padding: 20px 10px;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .detail-harga p {
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        padding: 0 5px;
+        min-height: 60px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-harga h3 {
+        width: 50%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popup-content {
+        height: 95%;
+    }
+
+    .modal>.header {
+        font-size: 24px;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .modal>.content {
+        height: 93%;
+    }
+
+    .field-1 {
+        height: 15%;
+    }
+
+    .field-1 div {
+        display: flex;
+        align-items: center;
+        height: 90%;
+    }
+
+    .field-1 input {
+        height: 80%;
+    }
+
+    .field-2 {
+        height: 70%;
+    }
+
+    .field2-div-1 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .field2-div-1 input {
+        height: 12%;
+    }
+
+    .field2-div-2 {
+        height: 12%;
+        margin: 6px 0;
+    }
+
+    .field2-div-2 input {
+        height: 100%;
+        margin: 0;
+    }
+
+    .field2-div-3 {
+        height: 49%;
+    }
+
+    .field2-div-3 input {
+        height: 25%;
     }
 }
 
@@ -293,9 +546,11 @@
         width: auto;
         margin: 20px 5px 80px;
     }
+
     .consul-payment-content {
         width: 100%;
     }
+
     .consul-payment-title {
         padding: 0 20px;
         width: auto;
@@ -318,6 +573,172 @@
     .pricing-card {
         width: 380px;
     }
+
+    .modal {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+
+    }
+
+    .modal>.close {
+        right: 5px;
+    }
+
+    .modal input {
+        width: 100%;
+    }
+
+    .modal fieldset {
+        padding: 0 10px;
+    }
+
+    .order-btn-payment {
+        float: none;
+        width: 50%;
+        margin: 0;
+    }
+
+    .price-info {
+        align-items: center;
+        margin: auto 0 0;
+    }
+
+    .price-info p {
+        width: 50%;
+    }
+
+    .detail-pesanan {
+        margin: 40px 5%;
+    }
+
+    .menu-pesanan {
+        padding: 20px 8px;
+    }
+
+    .detail-harga {
+        padding: 20px 10px;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .detail-harga p {
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        padding: 0 5px;
+        min-height: 60px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-harga h3 {
+        width: 50%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-pesanan {
+        margin: 40px 5%;
+    }
+
+    .menu-pesanan {
+        padding: 20px 8px;
+    }
+
+    .detail-harga {
+        padding: 20px 10px;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .detail-harga p {
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        padding: 0 5px;
+        min-height: 60px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-harga h3 {
+        width: 50%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popup-content {
+        height: 95%;
+    }
+
+    .modal>.header {
+        font-size: 24px;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .modal>.content {
+        height: 93%;
+    }
+
+    .field-1 {
+        height: 15%;
+    }
+
+    .field-1 div {
+        display: flex;
+        align-items: center;
+        height: 90%;
+    }
+
+    .field-1 input {
+        height: 80%;
+    }
+
+    .field-2 {
+        height: 70%;
+    }
+
+    .field2-div-1 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .field2-div-1 input {
+        height: 12%;
+    }
+
+    .field2-div-2 {
+        height: 12%;
+        margin: 6px 0;
+    }
+
+    .field2-div-2 input {
+        height: 100%;
+        margin: 0;
+    }
+
+    .field2-div-3 {
+        height: 49%;
+    }
+
+    .field2-div-3 input {
+        height: 25%;
+    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 767px) {
@@ -326,6 +747,7 @@
         margin: 50px 20px 100px;
         column-gap: 15px;
     }
+
     .consul-description {
         width: 50%;
         max-width: 530px;
@@ -334,16 +756,18 @@
     .consul-description p {
         text-align: justify;
     }
+
     .header-image {
         display: flex;
         width: 50%;
         min-width: 300px;
-        max-width: 600px;    
+        max-width: 600px;
     }
 
     .header-image img {
         min-width: 300px;
     }
+
     .consul-main {
         /* display: none; */
         width: auto;
@@ -351,15 +775,19 @@
         padding: 75px 30px;
         column-gap: 15px;
     }
+
     .article-item-left {
         width: 50%;
     }
+
     .article-item-right {
         width: 50%;
     }
+
     .article-item-left p {
         max-width: 300px;
     }
+
     .consul-payment {
         /* display: none; */
         margin: 0 20px;
@@ -367,13 +795,16 @@
         margin-top: 80px;
         margin-bottom: 80px;
     }
+
     .consul-payment-content {
         width: 100%;
     }
+
     .consul-payment-title {
         width: 100%;
         /* min-width: 790px; */
     }
+
     .pricing-table {
         grid-template-columns: auto auto;
         row-gap: 50px;
@@ -381,8 +812,54 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .pricing-card {
         width: 330px;
+    }
+
+    .modal {
+        width: 100%;
+        margin: auto;
+    }
+
+    .modal>.close {
+        right: 10px;
+    }
+
+    .price-info {
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 25px;
+    }
+
+    .popup-content {
+        padding: 0 20px;
+    }
+
+    .detail-harga {
+        padding: 20px 10px;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .detail-harga p {
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        padding: 0 5px;
+        min-height: 60px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-harga h3 {
+        width: 50%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -392,6 +869,7 @@
         margin: 50px auto 80px;
         column-gap: 15px;
     }
+
     .consul-description {
         width: 50%;
         max-width: 530px;
@@ -400,46 +878,122 @@
     .consul-description p {
         text-align: justify;
     }
+
     .header-image {
         display: flex;
         width: 50%;
         min-width: 300px;
-        max-width: 600px;    
+        max-width: 600px;
     }
 
     .header-image img {
         min-width: 300px;
     }
+
     .consul-main {
         width: 85%;
         margin: 50px auto 80px;
         padding: 75px 30px;
         column-gap: 15px;
     }
+
     .article-item-left {
         width: 50%;
     }
+
     .article-item-right {
         width: 50%;
     }
+
     .article-item-left p {
         max-width: 300px;
     }
+
     .consul-payment {
         margin-top: 80px;
     }
+
     .consul-payment-content {
         width: 100%;
     }
+
     .consul-payment-title {
         width: 100%;
         /* min-width: 790px; */
     }
+
     .pricing-table {
         grid-template-columns: auto auto auto;
         row-gap: 50px;
     }
+
     .pricing-card {
         width: 330px;
+    }
+
+    .price-info {
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 25px;
+    }
+
+    .detail-harga {
+        padding: 20px 10px;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .detail-harga p {
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        padding: 0 5px;
+        min-height: 60px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-harga h3 {
+        width: 50%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .price-info {
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 25px;
+    }
+
+    .detail-harga {
+        padding: 20px 10px;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .detail-harga p {
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        padding: 0 5px;
+        min-height: 60px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail-harga h3 {
+        width: 50%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

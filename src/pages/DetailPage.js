@@ -20,14 +20,14 @@ const DetailPage = () => {
         <><Navigation />
             <div className="detail-pesanan">
                 <h1>Pesanan Saya</h1>
-                <div>
+                <div className="detail-pesanan-saya">
+                    <h2>Riwayat Pesanan</h2>
                     {listPayment.map((item) => {
                         const { id, price, title, firstname, lastname, address, city, region, pcode, contact } = item;
                         return (
-                            <div key={id} className="detail-pesanan-saya">
-                                <h2>Riwayat Pesanan</h2>
+                            <div key={id}>
                                 <div className="menu-pesanan">
-                                    <p>{firstname} {lastname}</p>
+                                    <p className='first-n'>{firstname} {lastname}</p>
                                     <p>{address}, {city} {region} {pcode}</p>
                                     <p>{contact}</p>
                                     <div className="detail-harga">
@@ -35,11 +35,14 @@ const DetailPage = () => {
                                         <h3>Rp. {price}</h3>
                                     </div>
                                 </div>
+                                <br />
 
                             </div>
                         );
                     })}
+
                 </div>
+
             </div>
             <Footer /></>
     )
