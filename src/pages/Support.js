@@ -8,9 +8,11 @@ import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import anonim from "../assets/anonim.png";
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import { UserAuth } from "../config/AuthContext";
 
 const SupportPage = () => {
-    const [user] = useAuthState(auth)
+    
+    const { user } = UserAuth();
     const navigate = useNavigate();
     const messageRef = collection(db, "messages")
     const queryRef = query(messageRef, orderBy("createdAt", "desc"), limit(20));
@@ -29,14 +31,14 @@ const SupportPage = () => {
 
     }
     useEffect(() => {
-        if (sessionStorage.key('token') == null) {
+        if (user == null) {
             Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Anda Belum Login',
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Anda Belum Login',
             })
             navigate('/login');
-        }
+          }
     });
 
     return (

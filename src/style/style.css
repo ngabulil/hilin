@@ -911,3 +911,7 @@ p.hub-footer {
 .sent .anonim {
     flex-direction: row-reverse;
 }
+
+.text-chat hr {
+    background-color : black;
+}
